@@ -1,0 +1,13 @@
+diff --git a/extlink.module b/extlink.module
+index c802bf5..084621f 100644
+--- a/extlink.module
++++ b/extlink.module
+@@ -104,7 +104,7 @@ function _extlink_get_settings_from_config(Config $config) {
+     'extCssExclude'       => ((isset($settings['extlink_css_exclude'])) ? $settings['extlink_css_exclude'] : ''),
+     'extCssExplicit'      => ((isset($settings['extlink_css_explicit'])) ? $settings['extlink_css_explicit'] : ''),
+     'extAlert'            => ((isset($settings['extlink_alert'])) ? $settings['extlink_alert'] : FALSE),
+-    'extAlertText'        => ((isset($settings['extlink_alert_text'])) ? Xss::filterAdmin($settings['extlink_alert_text']) : t('This link will take you to an external web site. We are not responsible for their content.')),
++    'extAlertText'        => ((isset($settings['extlink_alert_text'])) ? $settings['extlink_alert_text'] : t('This link will take you to an external web site. We are not responsible for their content.')),
+     'mailtoClass'         => ((isset($settings['extlink_mailto_class'])) ? $settings['extlink_mailto_class'] : 'mailto'),
+     'mailtoLabel'         => ((isset($settings['extlink_mailto_label'])) ? Html::escape($settings['extlink_mailto_label']) : t('(link sends email)')),
+     'extUseFontAwesome'   => ((isset($settings['extlink_use_font_awesome'])) ? $settings['extlink_use_font_awesome'] : FALSE),
