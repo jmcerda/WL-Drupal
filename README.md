@@ -1,22 +1,32 @@
-# Composer-enabled Drupal template
+# WL Distro
 
-This is Pantheon's recommended starting point for forking new [Drupal](https://www.drupal.org/) upstreams
-that work with the Platform's Integrated Composer build process. It is also the
-Platform's standard Drupal 9 upstream.
+A Composer-based Drupal distribution.
 
-Unlike with earlier Pantheon upstreams, files such as Drupal Core that you are
-unlikely to adjust while building sites are not in the main branch of the 
-repository. Instead, they are referenced as dependencies that are installed by
-Composer.
+## Get Started
 
-For more information and detailed installation guides, please visit the
-Integrated Composer Pantheon documentation: https://pantheon.io/docs/integrated-composer
+### For server deployments on Azure
 
-## Contributing
+See: https://github.com/jmcerda/server-scripts
 
-Contributions are welcome in the form of GitHub pull requests. However, the
-`pantheon-upstreams/drupal-composer-managed` repository is a mirror that does not
-directly accept pull requests.
+### For local deployments
 
-Instead, to propose a change, please fork [pantheon-systems/drupal-composer-managed](https://github.com/pantheon-systems/drupal-composer-managed)
-and submit a PR to that repository.
+Clone code from your forked repository.
+
+Copy .env.example to .env and adjust variables if needed.
+
+## Build the site
+
+Install dependencies from project directory
+
+    composer install
+
+Add composer.lock file to your repo.
+
+    git add -f composer.lock
+    git commit -m 'compser.lock add'
+    git push
+
+Install the site
+
+    ./vendor/bin/drush site:install --account-mail=[SITE-EMAIL] --site-mail=[DEV-EMAIL] --site-name="[PROJECT_NAME]"
+
