@@ -1,0 +1,16 @@
+uuid: 2bdf4e79-3dae-4dc5-a088-4bde1fa4985f
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      uswds: uswds
+id: media_block
+label: 'Media block'
+icon_uuid: null
+icon_default: null
+description: 'A media block consists of an image, title and text, usually for display in a graphic list. <em>See <a href="https://designsystem.digital.gov/templates/landing-page/">U.S. Web Design System (USWDS)</a> for more information.</em>'
+behavior_plugins: {  }

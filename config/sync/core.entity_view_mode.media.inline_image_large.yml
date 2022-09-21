@@ -1,0 +1,10 @@
+uuid: 52f1682e-73ce-4450-89e3-bb3bd4f1cc0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.inline_image_large
+label: 'Inline - Large'
+targetEntityType: media
+cache: true

@@ -1,0 +1,293 @@
+uuid: 034a2c88-fbe7-4597-9034-8451ab8a7266
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card.field_alignment
+    - field.field.paragraph.card.field_border
+    - field.field.paragraph.card.field_button
+    - field.field.paragraph.card.field_button_style
+    - field.field.paragraph.card.field_card_layout
+    - field.field.paragraph.card.field_description
+    - field.field.paragraph.card.field_flag_layout_options
+    - field.field.paragraph.card.field_icon
+    - field.field.paragraph.card.field_media
+    - field.field.paragraph.card.field_media_thumb
+    - field.field.paragraph.card.field_standard_layout_options
+    - field.field.paragraph.card.field_title
+    - paragraphs.paragraphs_type.card
+  module:
+    - conditional_fields
+    - field_group
+    - field_states_ui
+    - link
+    - material_icons
+    - media_library
+    - text
+third_party_settings:
+  field_group:
+    group_layout:
+      children:
+        - field_border
+        - field_card_layout
+        - field_alignment
+        - field_standard_layout_options
+        - field_flag_layout_options
+      label: Style
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+        required_fields: false
+    group_media:
+      children:
+        - field_media_thumb
+        - field_media
+        - field_icon
+      label: Media
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        id: ''
+        description: ''
+        required_fields: true
+id: paragraph.card.default
+targetEntityType: paragraph
+bundle: card
+mode: default
+content:
+  field_alignment:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_border:
+    type: boolean_checkbox
+    weight: 13
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_button:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_button_style:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_card_layout:
+    type: options_buttons
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings:
+      field_states_ui:
+        form:
+          type: ''
+          list: ''
+          add: Add
+  field_flag_layout_options:
+    type: options_buttons
+    weight: 17
+    region: content
+    settings: {  }
+    third_party_settings:
+      field_states_ui:
+        form:
+          type: ''
+          list:
+            c7dccd27-2f73-4d0d-b81a-7f79bf4da671:
+              operations:
+                edit: Edit
+                delete: Delete
+            69c453f6-e000-4f4d-9cad-c6d23fa93aae:
+              operations:
+                edit: Edit
+                delete: Delete
+          add: Add
+        field_states:
+          c7dccd27-2f73-4d0d-b81a-7f79bf4da671:
+            uuid: c7dccd27-2f73-4d0d-b81a-7f79bf4da671
+            id: invisible
+            data:
+              target: field_card_layout
+              comparison: value
+              value: standard_layout
+              submit: 'Add Cancel'
+          69c453f6-e000-4f4d-9cad-c6d23fa93aae:
+            uuid: 69c453f6-e000-4f4d-9cad-c6d23fa93aae
+            id: visible
+            data:
+              target: field_card_layout
+              comparison: value
+              value: flag_layout
+              submit: 'Add Cancel'
+      conditional_fields:
+        6716fd4c-5d11-4be1-9a97-151aad0ae731:
+          entity_type: paragraph
+          bundle: card
+          dependee: field_card_layout
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: flag_layout
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+  field_icon:
+    type: material_icons
+    weight: 5
+    region: content
+    settings:
+      allow_style: true
+      default_style: baseline
+      allow_classes: true
+    third_party_settings:
+      field_states_ui:
+        form:
+          type: ''
+          list:
+            6cd05638-10fe-4aca-8307-710afd94bb0b:
+              operations:
+                edit: Edit
+                delete: Delete
+          add: Add
+        field_states:
+          6cd05638-10fe-4aca-8307-710afd94bb0b:
+            uuid: 6cd05638-10fe-4aca-8307-710afd94bb0b
+            id: visible
+            data:
+              target: field_media_thumb
+              comparison: value
+              value: icon
+              submit: 'Add Cancel'
+  field_media:
+    type: media_library_widget
+    weight: 4
+    region: content
+    settings:
+      media_types:
+        - image
+        - remote_video
+        - video
+    third_party_settings:
+      field_states_ui:
+        field_states:
+          a794393e-e59c-4e85-ba0b-29b56200392f:
+            uuid: a794393e-e59c-4e85-ba0b-29b56200392f
+            id: visible
+            data:
+              target: field_media_thumb
+              comparison: value
+              value: thumb
+              submit:
+                save: 'Update State'
+                cancel: Cancel
+  field_media_thumb:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_standard_layout_options:
+    type: options_buttons
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings:
+      field_states_ui:
+        form:
+          type: ''
+          list:
+            d4671408-9014-4bc2-a548-06d2c805e369:
+              operations:
+                edit: Edit
+                delete: Delete
+            d05c3a62-1ab6-4d2f-a4ab-8e56d10dbafb:
+              operations:
+                edit: Edit
+                delete: Delete
+          add: Add
+        field_states:
+          d4671408-9014-4bc2-a548-06d2c805e369:
+            uuid: d4671408-9014-4bc2-a548-06d2c805e369
+            id: invisible
+            data:
+              target: field_card_layout
+              comparison: value
+              value: flag_layout
+              submit: 'Add Cancel'
+          d05c3a62-1ab6-4d2f-a4ab-8e56d10dbafb:
+            uuid: d05c3a62-1ab6-4d2f-a4ab-8e56d10dbafb
+            id: visible
+            data:
+              target: field_card_layout
+              comparison: value
+              value: standard_layout
+              submit: 'Add Cancel'
+      conditional_fields:
+        bdd29002-746b-4386-841c-ac233b5b041d:
+          entity_type: paragraph
+          bundle: card
+          dependee: field_card_layout
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: standard_layout
+            effect: fade
+            effect_options:
+              fade:
+                speed: '400'
+              slide:
+                speed: '400'
+            selector: ''
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

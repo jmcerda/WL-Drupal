@@ -1,0 +1,14 @@
+uuid: a22aa9ce-7e12-4a5f-b209-99e6e5194df6
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.status_activated
+configuration:
+  email_subject:
+    value: 'Account details for [user:display-name] at [site:name] [site:slogan] (approved)'
+  email_body:
+    content:
+      value: "[user:display-name],\r\n\r\nYour account at [site:name] [site:slogan] has been activated.\r\n\r\nYou may now log in by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nThis link can only be used once to log in and will lead you to a page where you can set your password.\r\n\r\nAfter setting your password, you will be able to log in at [site:login-url] in the future using:\r\n\r\nusername: [user:account-name]\r\npassword: Your password\r\n\r\n--  [site:name] [site:slogan]team"
+      format: plain_text

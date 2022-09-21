@@ -1,0 +1,21 @@
+uuid: c8a236de-6e05-407a-ae3d-6b409fda2efe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_layout
+    - paragraphs.paragraphs_type.card_group
+  module:
+    - options
+id: paragraph.card_group.field_column_layout
+field_name: field_column_layout
+entity_type: paragraph
+bundle: card_group
+label: 'Column layout'
+description: "Use the flexible grid system to structure this content. The grid is mobile-first, powered by flexbox, and based on a twelve-column system.\r\n<br><em>See: https://designsystem.digital.gov/utilities/layout-grid/ for more information.</em>"
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

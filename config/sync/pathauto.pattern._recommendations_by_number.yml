@@ -1,0 +1,22 @@
+uuid: 65ae07b0-6fef-4b6a-89fd-d733fba01a84
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: _recommendations_by_number
+label: ' Recommendations by number'
+type: 'canonical_entities:node'
+pattern: '/recommendations/[node:field_number]'
+selection_criteria:
+  47240f5e-7e37-4f0a-a370-48c25eef20c3:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 47240f5e-7e37-4f0a-a370-48c25eef20c3
+    context_mapping:
+      node: node
+    bundles:
+      recommendation: recommendation
+selection_logic: and
+weight: -8
+relationships: {  }

@@ -1,0 +1,14 @@
+uuid: 1e5d211b-378c-47ae-817e-8c767fa58005
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+id: sex
+label: Sex
+category: Demographic
+likert: false
+options: |
+  Male: Male
+  Female: Female

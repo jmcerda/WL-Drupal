@@ -1,0 +1,39 @@
+uuid: bb80dd8d-0cb3-4605-86b1-57e0ddb46d87
+langcode: und
+status: true
+dependencies:
+  config:
+    - views.view.content_browser
+  module:
+    - views
+  enforced:
+    module:
+      - content_browser
+name: browse_content
+label: 'Browser for Content'
+display: modal
+display_configuration:
+  width: ''
+  height: ''
+  link_text: 'Select content'
+  auto_open: false
+selection_display: multi_step_display
+selection_display_configuration:
+  entity_type: node
+  display: label
+  display_settings: {  }
+  select_text: 'Use selected'
+  selection_hidden: false
+widget_selector: single
+widget_selector_configuration: {  }
+widgets:
+  57387ece-c090-4d22-9c00-eaaad74d642b:
+    id: view
+    uuid: 57387ece-c090-4d22-9c00-eaaad74d642b
+    label: 'Content listing'
+    weight: 0
+    settings:
+      submit_text: 'Select entities'
+      auto_select: false
+      view: content_browser
+      view_display: entity_browser

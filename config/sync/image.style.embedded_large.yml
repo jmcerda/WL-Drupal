@@ -1,0 +1,16 @@
+uuid: c69a4fed-3f53-44c6-becf-496ec4fbc9c5
+langcode: en
+status: true
+dependencies: {  }
+name: embedded_large
+label: 'Embedded - Large'
+effects:
+  4d72a69e-9c1a-49a2-a829-32a1e74c45c4:
+    uuid: 4d72a69e-9c1a-49a2-a829-32a1e74c45c4
+    id: image_scale
+    weight: 1
+    data:
+      width: 1280
+      height: 1280
+      upscale: false
+pipeline: __default__

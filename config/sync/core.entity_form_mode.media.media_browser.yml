@@ -1,0 +1,10 @@
+uuid: 231da434-af44-4416-8879-5e79662f7580
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.media_browser
+label: 'Media browser'
+targetEntityType: media
+cache: true

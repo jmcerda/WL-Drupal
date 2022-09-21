@@ -1,0 +1,21 @@
+uuid: 26030cb8-ab5c-42a2-bab9-346cfdac04d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alert_options
+    - paragraphs.paragraphs_type.alert
+  module:
+    - options
+id: paragraph.alert.field_alert_options
+field_name: field_alert_options
+entity_type: paragraph
+bundle: alert
+label: Options
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

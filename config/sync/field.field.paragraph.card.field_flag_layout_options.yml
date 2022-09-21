@@ -1,0 +1,23 @@
+uuid: ed20560f-a662-4ebb-a3d0-1db3b78fc243
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_flag_layout_options
+    - paragraphs.paragraphs_type.card
+  module:
+    - options
+id: paragraph.card.field_flag_layout_options
+field_name: field_flag_layout_options
+entity_type: paragraph
+bundle: card
+label: Options
+description: 'See <em>https://designsystem.digital.gov/components/card</em> for more information.'
+required: true
+translatable: false
+default_value:
+  -
+    value: flag_default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

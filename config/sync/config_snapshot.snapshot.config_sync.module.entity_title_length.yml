@@ -1,0 +1,20 @@
+uuid: 88b514c9-e6ae-4775-be0c-e8a80fbfa32b
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_title_length
+id: config_sync.module.entity_title_length
+snapshotSet: config_sync
+extensionType: module
+extensionName: entity_title_length
+items:
+  -
+    collection: ''
+    name: entity_title_length.config
+    data:
+      title_length: 255
+      entity_name:
+        node: node
+      _core:
+        default_config_hash: j9l2UOceXaNxDToN2s_Jo83B0yrhND4X3oT79jZQBqY

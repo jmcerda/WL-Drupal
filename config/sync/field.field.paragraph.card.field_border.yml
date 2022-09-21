@@ -1,0 +1,23 @@
+uuid: ae3d4a95-7682-4696-b849-b812ae3c6ba5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_border
+    - paragraphs.paragraphs_type.card
+id: paragraph.card.field_border
+field_name: field_border
+entity_type: paragraph
+bundle: card
+label: Border
+description: 'Add border. <em>See https://designsystem.digital.gov/components/card/ for more information.</em>'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

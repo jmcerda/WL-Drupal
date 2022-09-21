@@ -1,0 +1,16 @@
+uuid: 4d06c9d2-8391-4e21-a3de-be4b4754dd2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.embedded_large
+id: inline_media_image_large
+label: 'Inline - Large'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: embedded_large
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: embedded_large

@@ -1,0 +1,11 @@
+uuid: b6211cce-e12a-45e7-917b-7e37daa6ae2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+id: feeds_feed_delete_action
+label: 'Delete selected feeds'
+type: feeds_feed
+plugin: feeds_feed_delete_action
+configuration: {  }

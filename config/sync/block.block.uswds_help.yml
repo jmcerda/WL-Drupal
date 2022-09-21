@@ -1,0 +1,20 @@
+uuid: a4d6c9ce-b4d3-48ab-906b-5c8bf8bcfe1d
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - uswds
+id: uswds_help
+theme: uswds
+region: ''
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

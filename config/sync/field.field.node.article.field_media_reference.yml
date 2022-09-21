@@ -1,0 +1,34 @@
+uuid: eb281042-e659-44c0-a2d4-6fbc91f06b16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_reference
+    - media.type.audio_file
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+id: node.article.field_media_reference
+field_name: field_media_reference
+entity_type: node
+bundle: article
+label: 'Media References'
+description: 'Reference existing related media such as audio, documents, images or video to be displayed as <em>''Related Media''</em>.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio_file: audio_file
+      image: image
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: audio_file
+field_type: entity_reference

@@ -1,0 +1,10 @@
+uuid: d0dd8089-e68f-4d71-9621-0c245a0886cb
+langcode: en
+status: true
+dependencies: {  }
+id: user
+label: User
+tags:
+  canonical_url: '[user:url]'
+  description: '[site:name]'
+  title: '[user:display-name] | [site:name]'

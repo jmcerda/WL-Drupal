@@ -1,0 +1,28 @@
+uuid: bdfd5c7f-372a-4063-92d9-2f243ab5c06c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image
+    - media.type.image
+    - paragraphs.paragraphs_type.call_to_action
+id: paragraph.call_to_action.field_image
+field_name: field_image
+entity_type: paragraph
+bundle: call_to_action
+label: 'Background image'
+description: "If an image is provided, it will be used as the background image for this hero.\r\n<em>Please note: On single-column, edge-edge-to-edge CTA's, the image should be at least 2000X400px minimum. For high-resolution screens, 4000X800px is recommended.</em>"
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

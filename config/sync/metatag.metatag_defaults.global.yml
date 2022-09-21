@@ -1,0 +1,9 @@
+uuid: 1361741e-e79f-40dd-8449-714df92a4252
+langcode: en
+status: true
+dependencies: {  }
+id: global
+label: Global
+tags:
+  canonical_url: '[current-page:url]'
+  title: '[current-page:title] | [site:name] OIG'

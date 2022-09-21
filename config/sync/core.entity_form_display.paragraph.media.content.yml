@@ -1,0 +1,27 @@
+uuid: d9b76107-eea5-4011-9756-6bb92b523060
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.media.field_caption
+    - field.field.paragraph.media.field_media
+    - paragraphs.paragraphs_type.media
+  module:
+    - media_library
+id: paragraph.media.content
+targetEntityType: paragraph
+bundle: media
+mode: content
+content:
+  field_media:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_caption: true
+  status: true

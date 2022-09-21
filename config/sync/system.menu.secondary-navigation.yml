@@ -1,0 +1,8 @@
+uuid: f158c04c-417e-442f-a026-aaedc8cbcc6b
+langcode: en
+status: true
+dependencies: {  }
+id: secondary-navigation
+label: 'Secondary Navigation'
+description: 'Sidebar menu'
+locked: false

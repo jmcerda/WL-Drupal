@@ -1,0 +1,22 @@
+uuid: 3a503c9b-a228-428b-9053-5b872fc07e5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: career_by_career_path
+label: 'Career by career path'
+type: 'canonical_entities:node'
+pattern: '/careers/[node:field_career_path]/[node:title]'
+selection_criteria:
+  c1ad0c29-a790-4df9-9369-1eb4068a4e69:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: c1ad0c29-a790-4df9-9369-1eb4068a4e69
+    context_mapping:
+      node: node
+    bundles:
+      career: career
+selection_logic: and
+weight: -9
+relationships: {  }

@@ -1,0 +1,14 @@
+uuid: 231da021-6094-4bf5-8f65-e5e8146e840e
+langcode: en
+status: true
+dependencies: {  }
+id: document
+label: Document
+description: 'A locally hosted document.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_document
+field_map:
+  name: name

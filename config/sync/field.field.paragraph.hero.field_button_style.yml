@@ -1,0 +1,23 @@
+uuid: f7b6ce5d-5445-4cea-95cb-311f1ff33cea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_style
+    - paragraphs.paragraphs_type.hero
+  module:
+    - options
+id: paragraph.hero.field_button_style
+field_name: field_button_style
+entity_type: paragraph
+bundle: hero
+label: 'Button style'
+description: "Select the button style.\r\n<em>See https://designsystem.digital.gov/components/button/ for details.</em>"
+required: false
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

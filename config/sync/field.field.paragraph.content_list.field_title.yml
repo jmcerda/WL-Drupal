@@ -1,0 +1,19 @@
+uuid: 9578fb90-6677-461e-8f20-d3414241f96e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.content_list
+id: paragraph.content_list.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: content_list
+label: Title
+description: 'Title to be displayed above view.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

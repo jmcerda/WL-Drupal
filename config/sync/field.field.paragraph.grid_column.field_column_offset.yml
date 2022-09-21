@@ -1,0 +1,21 @@
+uuid: 1f8923af-7875-4875-ae5b-0207e97aa568
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_offset
+    - paragraphs.paragraphs_type.grid_column
+  module:
+    - options
+id: paragraph.grid_column.field_column_offset
+field_name: field_column_offset
+entity_type: paragraph
+bundle: grid_column
+label: Offset
+description: 'Offsets the item by the specified number of grid columns.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

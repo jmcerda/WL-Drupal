@@ -1,0 +1,21 @@
+uuid: 34b84e53-396f-4ea7-a065-b4b7fa56f9c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - govdelivery_bulletins
+id: config_sync.module.govdelivery_bulletins
+snapshotSet: config_sync
+extensionType: module
+extensionName: govdelivery_bulletins
+items:
+  -
+    collection: ''
+    name: govdelivery_bulletins.settings
+    data:
+      enable_bulletin_queuing: 0
+      enable_bulletin_queue_sends_to_govdelivery: 0
+      api_queue_trigger_enabled: 0
+      langcode: en
+      _core:
+        default_config_hash: LFAe_41HoarS84ps35Hn1pgr2RQlXuPBJ-gywl8b2Wo

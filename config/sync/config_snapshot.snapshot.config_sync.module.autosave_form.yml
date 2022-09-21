@@ -1,0 +1,33 @@
+uuid: 59bc2d44-05cd-4d70-a477-e1f2ef982800
+langcode: en
+status: true
+dependencies:
+  module:
+    - autosave_form
+id: config_sync.module.autosave_form
+snapshotSet: config_sync
+extensionType: module
+extensionName: autosave_form
+items:
+  -
+    collection: ''
+    name: autosave_form.messages
+    data:
+      entity_saved_in_background_alert_message: 'The content has been modified elsewhere. As a result, autosaving has been disabled and autosaved states for the current page have been deleted. Autosave will be reactivated after reloading the page.'
+      _core:
+        default_config_hash: In3MY-CuVp64RxCeU5X6rsEhR6jR4Si8OG6BX18DALg
+  -
+    collection: ''
+    name: autosave_form.settings
+    data:
+      interval: 60000
+      active_on:
+        content_entity_forms: true
+        config_entity_forms: false
+      notification:
+        active: true
+        message: 'Saving draft...'
+        delay: 1000
+      allowed_content_entity_types: {  }
+      _core:
+        default_config_hash: QnLi3Y7e5T_v9EZqYxRb90E0bBDb2g1y7xREWLKJLC0

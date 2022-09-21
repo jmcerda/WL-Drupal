@@ -1,0 +1,21 @@
+uuid: 86af2b4b-3468-45e9-93f1-846c4f27f7ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_number_of_columns
+    - paragraphs.paragraphs_type.grid_column
+  module:
+    - options
+id: paragraph.grid_column.field_number_of_columns
+field_name: field_number_of_columns
+entity_type: paragraph
+bundle: grid_column
+label: 'Number of columns'
+description: "1-12 indicates the number of columns the item spans out of a possible 12 per row. For example, if you want three equal-width columns across, use grid-col-4 for each item.\r\n\"Auto\" will take up as many columns required to adjust to the natural width of the content.\r\n\"Fill\" will use the remaining columns available in the row."
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

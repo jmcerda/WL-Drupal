@@ -1,0 +1,127 @@
+uuid: 4b7c976a-bcf6-4e0e-89b2-9c97b61e76d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.article.field_article_type
+    - field.field.node.article.field_content
+    - field.field.node.article.field_content_reference
+    - field.field.node.article.field_date
+    - field.field.node.article.field_external_article
+    - field.field.node.article.field_file
+    - field.field.node.article.field_link
+    - field.field.node.article.field_media_reference
+    - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_seo
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_teaser_content
+    - field.field.node.article.field_teaser_image
+    - node.type.article
+  module:
+    - datetime
+    - entity_reference_revisions
+    - link
+    - metatag
+    - user
+id: node.article.full
+targetEntityType: node
+bundle: article
+mode: full
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_article_type:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_content_reference:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: simple_date
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_file:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: embedded
+      link: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_media_reference:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: embedded
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_external_article: true
+  field_seo: true
+  field_teaser_content: true
+  field_teaser_image: true
+  langcode: true
+  search_api_excerpt: true

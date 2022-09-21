@@ -1,0 +1,20 @@
+uuid: ef7c528a-a82e-4370-ae87-d4bedae4a74d
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - uswds
+id: uswds_powered
+theme: uswds
+region: ''
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

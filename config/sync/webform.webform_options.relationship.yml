@@ -1,0 +1,17 @@
+uuid: 84f05cfd-ea0e-4e04-ab15-4163d2f0ac99
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+id: relationship
+label: Relationship
+category: Demographic
+likert: false
+options: |
+  Parent: Parent
+  'Significant Other': 'Significant Other'
+  Sibling: Sibling
+  Child: Child
+  Friend: Friend

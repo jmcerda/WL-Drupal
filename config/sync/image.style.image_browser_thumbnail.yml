@@ -1,0 +1,16 @@
+uuid: d1799133-3a68-4056-8e90-90147e3a182e
+langcode: en
+status: true
+dependencies: {  }
+name: image_browser_thumbnail
+label: 'Image browser thumbnail'
+effects:
+  bfe2eba3-4b7e-498f-aa6e-8e909cee1478:
+    uuid: bfe2eba3-4b7e-498f-aa6e-8e909cee1478
+    id: image_scale
+    weight: 2
+    data:
+      width: 180
+      height: 150
+      upscale: false
+pipeline: __default__

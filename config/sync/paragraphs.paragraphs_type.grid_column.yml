@@ -1,0 +1,16 @@
+uuid: 0e564cbf-470a-4063-a03a-6cd6a9b673a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      uswds: uswds
+id: grid_column
+label: 'Grid column'
+icon_uuid: null
+icon_default: null
+description: "Column content to be used in a grid row.<br>\r\nThe grid system uses a series of containers, rows, and columns to lay out and align content. <br>\r\nThe grid is mobile-first, powered by Flexbox, and based on a twelve-column system.<br>\r\n<em>See <a href=\"https://designsystem.digital.gov/utilities/layout-grid</a> for more information.</em>"
+behavior_plugins: {  }

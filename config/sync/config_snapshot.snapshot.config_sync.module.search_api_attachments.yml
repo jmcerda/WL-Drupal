@@ -1,0 +1,37 @@
+uuid: 7badc285-cf1c-4e83-8c5b-9d96ec145581
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_attachments
+id: config_sync.module.search_api_attachments
+snapshotSet: config_sync
+extensionType: module
+extensionName: search_api_attachments
+items:
+  -
+    collection: ''
+    name: search_api_attachments.admin_config
+    data:
+      extraction_method: ''
+      preserve_cache: true
+      read_text_files_directly: false
+      solr_extractor_configuration:
+        solr_server: ''
+      pdftotext_extractor_configuration:
+        pdftotext_path: pdftotext
+      tika_extractor_configuration:
+        java_path: java
+        tika_path: ''
+      tika_server_extractor_configuration:
+        scheme: http
+        host: localhost
+        port: '9998'
+        timeout: 5
+      python_pdf2txt_extractor_configuration:
+        python_path: python
+        python_pdf2txt_script: /usr/bin/pdf2txt.py
+      docconv_extractor_configuration:
+        docconv_path: /usr/bin/docd
+      _core:
+        default_config_hash: iEqfsY3NCYdxBTF8YdyhDbgPo9BC6xaHaMoXOU0dQBk

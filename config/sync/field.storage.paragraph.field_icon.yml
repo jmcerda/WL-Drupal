@@ -1,0 +1,19 @@
+uuid: 65e01b06-1f54-481d-9399-7d8d265b4df3
+langcode: en
+status: true
+dependencies:
+  module:
+    - material_icons
+    - paragraphs
+id: paragraph.field_icon
+field_name: field_icon
+entity_type: paragraph
+type: material_icons
+settings: {  }
+module: material_icons
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

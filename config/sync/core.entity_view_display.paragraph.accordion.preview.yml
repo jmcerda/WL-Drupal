@@ -1,0 +1,34 @@
+uuid: ea9a29ea-2554-44e6-8ec8-fcca93027990
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.accordion.field_accordion_bordered
+    - field.field.paragraph.accordion.field_accordion_expand
+    - field.field.paragraph.accordion.field_accordion_multi
+    - field.field.paragraph.accordion.field_content
+    - field.field.paragraph.accordion.field_title
+    - paragraphs.paragraphs_type.accordion
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion.preview
+targetEntityType: paragraph
+bundle: accordion
+mode: preview
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: preview
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_accordion_bordered: true
+  field_accordion_expand: true
+  field_accordion_multi: true
+  field_title: true
+  search_api_excerpt: true

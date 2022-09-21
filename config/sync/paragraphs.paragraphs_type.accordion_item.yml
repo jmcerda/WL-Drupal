@@ -1,0 +1,16 @@
+uuid: 6140ccd7-b6a2-447d-95e4-983caf5f6e3a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      uswds: uswds
+id: accordion_item
+label: 'Accordion Item'
+icon_uuid: null
+icon_default: null
+description: 'An ''Accordion Item'' for use inside of ''Accordion'' paragraphs. <em>See <a href="https://designsystem.digital.gov/components/accordion/">U.S. Web Design System (USWDS)</a> for more information.</em>'
+behavior_plugins: {  }

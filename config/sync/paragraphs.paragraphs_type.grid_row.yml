@@ -1,0 +1,16 @@
+uuid: a9951974-2e37-4ec2-ac5c-be70a24ef43e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      uswds: uswds
+id: grid_row
+label: 'Grid row'
+icon_uuid: null
+icon_default: null
+description: "Grid row layout for column content.<br>\r\nThe grid system uses a series of containers, rows, and columns to lay out and align content. <br>\r\nThe grid is mobile-first, powered by Flexbox, and based on a twelve-column system.<br>\r\n<em>See <a href=\"https://designsystem.digital.gov/utilities/layout-grid\">U.S. Web Design System (USWDS)</a> for more information.</em>"
+behavior_plugins: {  }

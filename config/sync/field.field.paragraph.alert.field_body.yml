@@ -1,0 +1,21 @@
+uuid: c976a3cc-c02c-4cd4-9a7e-9f3c18b6f9ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.alert
+  module:
+    - text
+id: paragraph.alert.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: alert
+label: Text
+description: 'Provide detailed information about your alert. <br><em>See: <a href="https://designsystem.digital.gov/components/alert/">https://designsystem.digital.gov/components/alert/</a> for more information.</em>'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

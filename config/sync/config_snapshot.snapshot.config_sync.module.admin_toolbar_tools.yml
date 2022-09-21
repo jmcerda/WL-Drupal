@@ -1,0 +1,19 @@
+uuid: d3a646ce-c9fe-4b12-99bc-5b193106e240
+langcode: en
+status: true
+dependencies:
+  module:
+    - admin_toolbar_tools
+id: config_sync.module.admin_toolbar_tools
+snapshotSet: config_sync
+extensionType: module
+extensionName: admin_toolbar_tools
+items:
+  -
+    collection: ''
+    name: admin_toolbar_tools.settings
+    data:
+      max_bundle_number: 20
+      hoverintent_functionality: true
+      _core:
+        default_config_hash: KF64Wh_DTqvvcH9nGm0bPcSwuigIFrakaPHHpGqaXiU

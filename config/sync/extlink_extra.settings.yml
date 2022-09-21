@@ -1,0 +1,12 @@
+extlink_page_title: Attention!
+extlink_alert_text:
+  value: "<h4>You are leaving the [site:name] website and are about to proceed to a Non-Government Site.</h4>\r\n\r\n<p><strong>[extlink:external-url]</strong></p>\r\n\r\n<p>We do not endorse the organization or views represented by this site and take no responsibility for, and exercise no control over, the accuracy, accessibility, copyright or trademark compliance or legality of the material contained on this site.</p>\r\n\r\n<p>Click OK to proceed or cancel to stay on this page.</p>\r\n\r\n<p><a class=\"usa-button usa-button-big\" href=\"[extlink:back-url]\" title=\"Stay on page\">Stay on page</a> <a class=\"usa-button usa-button-big\" href=\"[extlink:external-url]\" title=\"Go to link\">Proceed</a></p>\r\n\r\n<p>[extlink:timer]</p>\r\n"
+  format: raw_html
+extlink_alert_type: modal
+extlink_modal_width: '0'
+extlink_alert_timer: '0'
+extlink_cache_fix: 0
+extlink_508_fix: 1
+extlink_508_text: ' [external link]'
+extlink_url_override: 0
+extlink_exclude_warning: ''

@@ -1,0 +1,14 @@
+uuid: ba212ffc-2943-4270-bcb9-25b2594b0331
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.register_no_approval_required
+configuration:
+  email_subject:
+    value: 'Account details for [user:display-name] at [site:name] [site:slogan]'
+  email_body:
+    content:
+      value: "[user:display-name],\r\n\r\nThank you for registering at [site:name] [site:slogan]. You may now log in by clicking this link or copying and pasting it into your browser:\r\n\r\n[user:one-time-login-url]\r\n\r\nThis link can only be used once to log in and will lead you to a page where you can set your password.\r\n\r\nAfter setting your password, you will be able to log in at [site:login-url] in the future using:\r\n\r\nusername: [user:name]\r\npassword: Your password\r\n\r\n--  [site:name] [site:slogan] team"
+      format: plain_text

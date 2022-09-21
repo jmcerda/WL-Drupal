@@ -1,0 +1,14 @@
+uuid: bc65badb-dcad-4579-8a54-5ec980c6243d
+langcode: en
+status: true
+dependencies: {  }
+id: report_content_files
+label: 'Report content/files'
+enabled: true
+first_field: field_file
+second_field: field_report
+bundles:
+  media:
+    - report
+  node:
+    - report

@@ -1,0 +1,27 @@
+uuid: 97e2411b-9e66-4214-bd8c-32733dd767f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - admin_toolbar_search
+    - filter
+    - media
+    - shortcut
+    - system
+    - tfa
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'administer shortcuts'
+  - 'customize shortcut links'
+  - 'setup own tfa'
+  - 'switch shortcut sets'
+  - 'use admin toolbar search'
+  - 'use text format restricted_html'
+  - 'view media'

@@ -1,0 +1,21 @@
+uuid: a39f7d44-61a5-4b43-9395-0fa6c8a2d420
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_blend_mode
+    - paragraphs.paragraphs_type.call_to_action
+  module:
+    - options
+id: paragraph.call_to_action.field_background_blend_mode
+field_name: field_background_blend_mode
+entity_type: paragraph
+bundle: call_to_action
+label: 'Blend mode'
+description: 'If desired, set the background-blend-mode property defining the blending mode of each background layer (color and/or image).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

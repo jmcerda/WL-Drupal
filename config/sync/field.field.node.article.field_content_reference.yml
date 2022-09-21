@@ -1,0 +1,35 @@
+uuid: 98de867b-08f8-494d-b04f-b3436b8ca0cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_reference
+    - node.type.article
+    - node.type.career
+    - node.type.page
+    - node.type.person
+    - node.type.recommendation
+id: node.article.field_content_reference
+field_name: field_content_reference
+entity_type: node
+bundle: article
+label: 'Content References'
+description: 'Reference existing related content such as career, report, pages and/or other articles to be displayed as <em>''Related Content''</em>.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      career: career
+      page: page
+      person: person
+      recommendation: recommendation
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

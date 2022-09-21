@@ -1,0 +1,54 @@
+uuid: 23f9c31a-1bbf-4120-8ac5-b6ccf31786ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - simple_sitemap
+id: config_sync.module.simple_sitemap
+snapshotSet: config_sync
+extensionType: module
+extensionName: simple_sitemap
+items:
+  -
+    collection: ''
+    name: simple_sitemap.custom_links.default
+    data:
+      links:
+        -
+          path: /
+          priority: '1.0'
+          changefreq: daily
+      _core:
+        default_config_hash: 25hWeYa4sasuJtHqKKcEN_nYiuEC1lMPYHsn5dawJEw
+  -
+    collection: ''
+    name: simple_sitemap.settings
+    data:
+      max_links: 2000
+      cron_generate: true
+      cron_generate_interval: 0
+      generate_duration: 10000
+      remove_duplicates: true
+      skip_untranslated: true
+      xsl: true
+      base_url: ''
+      default_variant: default
+      custom_links_include_images: false
+      excluded_languages: {  }
+      enabled_entity_types:
+        - node
+        - taxonomy_term
+        - menu_link_content
+      entities_per_queue_item: 50
+      _core:
+        default_config_hash: fFCOUWimqdj2E7qYCcYmI2LH7rwpaLEUOfi69hUFuXk
+  -
+    collection: ''
+    name: simple_sitemap.variants.default_hreflang
+    data:
+      variants:
+        default:
+          label: Default
+          weight: 0
+      _core:
+        default_config_hash: nQAXscP-SDpsmqHlQ6u0iBvcuJPrAikb09c3cP2_n0k

@@ -1,0 +1,18 @@
+uuid: e8478bd5-444d-4e8e-88e6-13b50ac72319
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_accordion_multi
+field_name: field_accordion_multi
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

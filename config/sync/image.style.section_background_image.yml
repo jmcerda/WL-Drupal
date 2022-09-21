@@ -1,0 +1,16 @@
+uuid: 5fc936a9-62b5-4f6f-a31a-62d63ea2d0dd
+langcode: en
+status: true
+dependencies: {  }
+name: section_background_image
+label: 'Section background image'
+effects:
+  18e6d8ab-f92a-4a53-be21-3be0c15c232f:
+    uuid: 18e6d8ab-f92a-4a53-be21-3be0c15c232f
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 400
+      upscale: true
+pipeline: __default__

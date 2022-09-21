@@ -1,0 +1,23 @@
+uuid: 263cd0e2-ab7e-4824-ac31-7057d92468d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_edge_to_edge
+    - paragraphs.paragraphs_type.graphic_list
+id: paragraph.graphic_list.field_edge_to_edge
+field_name: field_edge_to_edge
+entity_type: paragraph
+bundle: graphic_list
+label: 'Enable Edge-to-edge mode'
+description: "Turn on \"edge-to-edge\" mode*.\r\n<em>*\"Edge-to-edge\" mode causes the paragraph background \"off the grid\", extending across the entire width of the screen. It also disables any sidebars while active.</em>"
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,28 @@
+uuid: c508844a-1dfe-4b95-9646-59e2febdb980
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_link_attributes
+id: config_sync.module.menu_link_attributes
+snapshotSet: config_sync
+extensionType: module
+extensionName: menu_link_attributes
+items:
+  -
+    collection: ''
+    name: menu_link_attributes.config
+    data:
+      attributes:
+        class:
+          label: ''
+          description: ''
+        target:
+          label: ''
+          description: ''
+          options:
+            _blank: 'New window (_blank)'
+            _self: 'Same window (_self)'
+          default_value: ''
+      _core:
+        default_config_hash: kO5fDGTDu1JqYpxKrtzjdzwObU2Ko_3CxABNjqBbYos

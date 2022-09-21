@@ -1,0 +1,16 @@
+uuid: 07fc46da-1467-431c-887d-ec899e706a4a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      uswds: uswds
+id: accordion
+label: Accordion
+icon_uuid: null
+icon_default: null
+description: 'An accordion is a list of headers that hide or reveal additional content when selected. <em>See <a href="https://designsystem.digital.gov/components/accordion/">U.S. Web Design System (USWDS)</a> for more information.</em>'
+behavior_plugins: {  }

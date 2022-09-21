@@ -1,0 +1,14 @@
+uuid: 615e36bf-d180-4e4c-a57b-366032dfb85c
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media
+label: Media
+type: 'canonical_entities:media'
+pattern: '/media/[media:bundle:target_id]/[media:mid]'
+selection_criteria: {  }
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,21 @@
+uuid: b46d61d3-6795-4157-bc6e-7542200e7643
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_type
+    - paragraphs.paragraphs_type.alert
+  module:
+    - options
+id: paragraph.alert.field_type
+field_name: field_type
+entity_type: paragraph
+bundle: alert
+label: 'Alert Type'
+description: 'Select alert type.<br><em>See: <a href="https://designsystem.digital.gov/components/alert/">https://designsystem.digital.gov/components/alert/</a> for more information.</em>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

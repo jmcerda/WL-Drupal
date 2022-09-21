@@ -1,0 +1,59 @@
+uuid: bfcdda43-661c-402e-9a57-b266b4e23072
+langcode: en
+status: true
+dependencies:
+  module:
+    - symfony_mailer
+id: config_sync.module.symfony_mailer
+snapshotSet: config_sync
+extensionType: module
+extensionName: symfony_mailer
+items:
+  -
+    collection: ''
+    name: filter.format.email_html
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      name: 'Email HTML'
+      format: email_html
+      weight: 0
+      filters: {  }
+      _core:
+        default_config_hash: u5MXordtBE3SIs1x4qEUEBUFctQ0jjSn2vbPtgxvXuM
+  -
+    collection: ''
+    name: symfony_mailer.mailer_transport.native
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: native
+      label: Native
+      plugin: native
+      configuration: {  }
+      _core:
+        default_config_hash: XeXsIlg7kOaq6aS6ukqMUES_MXt11Y2vCYqBFnU_Tbo
+  -
+    collection: ''
+    name: symfony_mailer.mailer_transport.sendmail
+    data:
+      langcode: en
+      status: true
+      dependencies: {  }
+      id: sendmail
+      label: Sendmail
+      plugin: sendmail
+      configuration:
+        query:
+          command: ''
+      _core:
+        default_config_hash: JlhtZGzrKvb_1TFIVW-o2lEEoeutUxHkdpZ1WzIkJMY
+  -
+    collection: ''
+    name: symfony_mailer.settings
+    data:
+      default_transport: native
+      _core:
+        default_config_hash: EyOEXkLJD4vYGpK5wicdBSwBorOJgslf_tyscMgeN0Q

@@ -1,0 +1,51 @@
+uuid: da556fba-bec8-4d2b-808d-af3163383d28
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_background_blend_mode
+field_name: field_background_blend_mode
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: normal
+      label: normal
+    -
+      value: multiply
+      label: multiply
+    -
+      value: screen
+      label: screen
+    -
+      value: overlay
+      label: overlay
+    -
+      value: darken
+      label: darken
+    -
+      value: lighten
+      label: lighten
+    -
+      value: color-dodge
+      label: color-dodge
+    -
+      value: saturation
+      label: saturation
+    -
+      value: color
+      label: color
+    -
+      value: luminosity
+      label: luminosity
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

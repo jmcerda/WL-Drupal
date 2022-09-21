@@ -1,0 +1,44 @@
+uuid: d3eee9a2-2601-4ad9-ab51-7837ea1ff735
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media_block.field_body
+    - field.field.paragraph.media_block.field_image
+    - field.field.paragraph.media_block.field_link
+    - field.field.paragraph.media_block.field_title
+    - paragraphs.paragraphs_type.media_block
+  module:
+    - text
+id: paragraph.media_block.default
+targetEntityType: paragraph
+bundle: media_block
+mode: default
+content:
+  field_body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: thumbnail
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_link: true
+  search_api_excerpt: true

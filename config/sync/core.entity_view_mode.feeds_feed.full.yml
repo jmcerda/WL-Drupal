@@ -1,0 +1,10 @@
+uuid: e49a6ff7-49b2-4a67-84a3-1124901bfe26
+langcode: en
+status: false
+dependencies:
+  module:
+    - feeds
+id: feeds_feed.full
+label: 'Full feed'
+targetEntityType: feeds_feed
+cache: true

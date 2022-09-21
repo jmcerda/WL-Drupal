@@ -1,0 +1,75 @@
+uuid: 2b5b6ad1-80cf-4a5f-b78e-58c90b0b685a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_item
+    - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.hero
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion_item.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: accordion_item
+label: Content
+description: 'Add any ''Paragraph'' content such as text, audio, video, lists, columns, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion: accordion
+      accordion_item: accordion_item
+      slider: slider
+      hero: hero
+    negate: 1
+    target_bundles_drag_drop:
+      accordion:
+        weight: 17
+        enabled: true
+      accordion_item:
+        weight: 18
+        enabled: true
+      call_to_action:
+        weight: 19
+        enabled: false
+      column:
+        weight: 26
+        enabled: false
+      content_list:
+        weight: 20
+        enabled: false
+      form:
+        weight: 21
+        enabled: false
+      from_library:
+        weight: 22
+        enabled: false
+      graphic_list:
+        weight: 27
+        enabled: false
+      grid:
+        weight: 28
+        enabled: false
+      hero:
+        weight: 29
+        enabled: true
+      media_block:
+        weight: 30
+        enabled: false
+      slider:
+        weight: 23
+        enabled: true
+      text:
+        weight: 31
+        enabled: false
+      video:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

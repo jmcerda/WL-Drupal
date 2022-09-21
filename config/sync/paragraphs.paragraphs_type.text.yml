@@ -1,0 +1,10 @@
+uuid: a5e6ebea-57a7-42f0-842d-7733d241f056
+langcode: en
+status: true
+dependencies: {  }
+id: text
+label: Text
+icon_uuid: null
+icon_default: null
+description: 'A text paragraph is used for body text to be added to a piece of content, such as an Article, Page, etc.'
+behavior_plugins: {  }

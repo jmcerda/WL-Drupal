@@ -1,0 +1,25 @@
+uuid: bbf4849f-3d99-474f-83bd-0bcc139c26d7
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.secondary-footer
+  module:
+    - system
+  theme:
+    - adminimal_theme
+id: adminimal_theme_secondaryfooter
+theme: adminimal_theme
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:secondary-footer'
+settings:
+  id: 'system_menu_block:secondary-footer'
+  label: 'Secondary Footer Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

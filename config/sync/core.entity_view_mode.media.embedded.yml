@@ -1,0 +1,10 @@
+uuid: f85cb5d5-3d88-4c54-8456-01ac13d12276
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.embedded
+label: Embedded
+targetEntityType: media
+cache: true

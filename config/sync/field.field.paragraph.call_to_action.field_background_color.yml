@@ -1,0 +1,21 @@
+uuid: 79cb7a70-201f-4d3e-b786-1b2d02f07652
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_color
+    - paragraphs.paragraphs_type.call_to_action
+  module:
+    - options
+id: paragraph.call_to_action.field_background_color
+field_name: field_background_color
+entity_type: paragraph
+bundle: call_to_action
+label: 'Background color'
+description: 'Select a predefined background color for your CTA. The color can be standalone, or used in conjunction with a background image (via CSS blending options).'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,33 @@
+uuid: 56085c86-296d-4fb1-8f1d-fcaf3b961bd4
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_type
+field_name: field_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: usa-alert--info
+      label: Informative
+    -
+      value: usa-alert--warning
+      label: Warning
+    -
+      value: usa-alert--error
+      label: Error
+    -
+      value: usa-alert--success
+      label: Success
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

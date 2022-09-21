@@ -1,0 +1,7 @@
+uuid: b4e86df5-f632-4e4f-8afb-d1e060745388
+langcode: en
+status: true
+dependencies: {  }
+id: 3_column_tablet
+label: '3 Column Tablet'
+classes: 'tablet:grid-col'

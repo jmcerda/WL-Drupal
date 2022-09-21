@@ -1,0 +1,29 @@
+uuid: 07bc3a25-6361-4d68-ae6b-995b37c115bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.grid_column.field_column_offset
+    - field.field.paragraph.grid_column.field_content
+    - field.field.paragraph.grid_column.field_number_of_columns
+    - paragraphs.paragraphs_type.grid_column
+  module:
+    - entity_reference_revisions
+id: paragraph.grid_column.default
+targetEntityType: paragraph
+bundle: grid_column
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_column_offset: true
+  field_number_of_columns: true
+  search_api_excerpt: true

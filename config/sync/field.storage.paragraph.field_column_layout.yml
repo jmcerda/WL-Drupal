@@ -1,0 +1,60 @@
+uuid: 47270c96-56fd-410e-b748-3fa2581b538d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_column_layout
+field_name: field_column_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: grid-col-12
+      label: 'Single column'
+    -
+      value: grid-col-6
+      label: '2 column - All displays'
+    -
+      value: grid-col-4
+      label: '3 column - All displays'
+    -
+      value: grid-col-3
+      label: '4 column - All displays'
+    -
+      value: 'mobile-lg:grid-col-6'
+      label: '2 column - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-4'
+      label: '3 column - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-3'
+      label: '4 column - Large mobile & up'
+    -
+      value: 'tablet:grid-col-6'
+      label: '2 column - Tablet & up'
+    -
+      value: 'tablet:grid-col-4'
+      label: '3 column - Tablet & up'
+    -
+      value: 'tablet:grid-col-3'
+      label: '4 column - Tablet & up'
+    -
+      value: 'desktop:grid-col-6'
+      label: '2 column - Desktop only'
+    -
+      value: 'desktop:grid-col-4'
+      label: '3 column - Desktop only'
+    -
+      value: 'desktop:grid-col-3'
+      label: '4 column - Desktop only'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

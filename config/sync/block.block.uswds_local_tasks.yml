@@ -1,0 +1,20 @@
+uuid: 9e48afc0-30d5-4315-9fcf-a295c3236bf0
+langcode: en
+status: false
+dependencies:
+  theme:
+    - uswds
+id: uswds_local_tasks
+theme: uswds
+region: ''
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 6a3c4aff-273d-4fdd-8297-5edee1a24676
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion_expand
+    - paragraphs.paragraphs_type.accordion
+id: paragraph.accordion.field_accordion_expand
+field_name: field_accordion_expand
+entity_type: paragraph
+bundle: accordion
+label: 'Start expanded'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

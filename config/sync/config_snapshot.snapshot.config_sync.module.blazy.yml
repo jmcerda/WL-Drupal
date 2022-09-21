@@ -1,0 +1,38 @@
+uuid: b7057c7c-a40e-43fa-9829-275a43148050
+langcode: en
+status: true
+dependencies:
+  module:
+    - blazy
+id: config_sync.module.blazy
+snapshotSet: config_sync
+extensionType: module
+extensionName: blazy
+items:
+  -
+    collection: ''
+    name: blazy.settings
+    data:
+      admin_css: true
+      fx: ''
+      decode: false
+      noscript: false
+      responsive_image: false
+      one_pixel: true
+      placeholder: ''
+      unstyled_extensions: ''
+      extras: {  }
+      blazy:
+        loadInvisible: false
+        offset: 100
+        saveViewportOffsetDelay: 50
+        validateDelay: 25
+        container: ''
+      io:
+        enabled: false
+        unblazy: false
+        rootMargin: 0px
+        threshold: '0'
+        disconnect: false
+      _core:
+        default_config_hash: t2LzrClibyhtJD_yHiWZ6AyD-EYKhe94rOo3dUGLLUU

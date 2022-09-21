@@ -1,0 +1,1792 @@
+uuid: d7827bf5-2c02-48ac-92f8-072ec02ec72e
+langcode: en
+status: true
+dependencies:
+  module:
+    - moderation_dashboard
+id: config_sync.module.moderation_dashboard
+snapshotSet: config_sync
+extensionType: module
+extensionName: moderation_dashboard
+items:
+  -
+    collection: ''
+    name: moderation_dashboard.settings
+    data:
+      redirect_on_login: true
+      _core:
+        default_config_hash: a8FcUH0DsoS86irnJ6Rt4T8KecTSBw_x2mhSTb0nNqw
+  -
+    collection: ''
+    name: page_manager.page.moderation_dashboard
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - moderation_dashboard
+        module:
+          - moderation_dashboard
+      id: moderation_dashboard
+      label: 'Moderation Dashboard'
+      description: ''
+      use_admin_theme: false
+      path: '/user/{user}/moderation/dashboard'
+      access_logic: and
+      access_conditions:
+        -
+          id: has_moderated_content_type
+          negate: false
+          context_mapping: {  }
+        -
+          id: moderation_dashboard_access
+          negate: false
+          context_mapping:
+            dashboard_user: user
+            current_user: current_user
+      parameters:
+        user:
+          machine_name: user
+          type: 'entity:user'
+          label: User
+      _core:
+        default_config_hash: VfPvbl_yRuurg4Y5V0nK1u43hSwdwxOZE1RFP81BGSQ
+  -
+    collection: ''
+    name: page_manager.page_variant.moderation_dashboard-panels_variant-0
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        config:
+          - page_manager.page.moderation_dashboard
+          - views.view.content_moderation_dashboard_in_review
+          - views.view.moderation_dashboard_recent_changes
+          - views.view.moderation_dashboard_recently_created
+        enforced:
+          module:
+            - moderation_dashboard
+        module:
+          - moderation_dashboard
+          - panels
+          - views
+      id: moderation_dashboard-panels_variant-0
+      label: Panels
+      variant: panels_variant
+      variant_settings:
+        blocks:
+          810cd29f-e1c6-46ec-9eaa-dec914cfd4f4:
+            id: 'views_block:content_moderation_dashboard_in_review-block_1'
+            label: 'Content in review'
+            provider: views
+            label_display: visible
+            views_label: 'Content in review'
+            items_per_page: none
+            region: left
+            weight: -3
+            uuid: 810cd29f-e1c6-46ec-9eaa-dec914cfd4f4
+            context_mapping: {  }
+          bcc91274-24b8-4755-9bf5-e6f104674898:
+            id: 'views_block:moderation_dashboard_recent_changes-block_1'
+            label: 'Recent updates'
+            provider: views
+            label_display: visible
+            views_label: 'Recent updates'
+            items_per_page: none
+            region: middle
+            weight: -10
+            uuid: bcc91274-24b8-4755-9bf5-e6f104674898
+            context_mapping: {  }
+          1a06173d-634b-4475-a80b-d23a9773083b:
+            id: 'views_block:moderation_dashboard_recently_created-block_1'
+            label: 'Recently created'
+            provider: views
+            label_display: visible
+            views_label: 'Recently created'
+            items_per_page: none
+            region: middle
+            weight: -9
+            uuid: 1a06173d-634b-4475-a80b-d23a9773083b
+            context_mapping: {  }
+          6f599e3c-e949-490d-8fee-a467d3094ac9:
+            id: 'views_block:content_moderation_dashboard_in_review-block_2'
+            label: 'Content drafts'
+            provider: views
+            label_display: visible
+            views_label: 'Content drafts'
+            items_per_page: none
+            region: left
+            weight: -2
+            uuid: 6f599e3c-e949-490d-8fee-a467d3094ac9
+            context_mapping: {  }
+          e5cd0b52-53b0-4745-be70-85484005ba08:
+            id: moderation_dashboard_activity
+            label: 'Editor activity for the last 30 days'
+            provider: moderation_dashboard
+            label_display: visible
+            region: left
+            weight: 0
+            uuid: e5cd0b52-53b0-4745-be70-85484005ba08
+            context_mapping: {  }
+          6c424801-a4e1-4e86-a65f-73020e68e1d3:
+            id: 'views_block:content_moderation_dashboard_in_review-block_3'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: right
+            weight: -3
+            uuid: 6c424801-a4e1-4e86-a65f-73020e68e1d3
+            context_mapping: {  }
+          1fbb2fbb-d06a-4682-8fb3-07b37de946b8:
+            id: 'views_block:moderation_dashboard_recent_changes-block_2'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: right
+            weight: -2
+            uuid: 1fbb2fbb-d06a-4682-8fb3-07b37de946b8
+            context_mapping: {  }
+          518a6aee-1b2a-471a-b775-797daf438992:
+            id: 'views_block:moderation_dashboard_recently_created-block_2'
+            label: ''
+            provider: views
+            label_display: visible
+            views_label: ''
+            items_per_page: none
+            region: right
+            weight: 0
+            uuid: 518a6aee-1b2a-471a-b775-797daf438992
+            context_mapping: {  }
+        id: panels_variant
+        uuid: 4267dc51-27a4-4f19-bb07-19fe044527fa
+        label: null
+        weight: 0
+        layout: moderation_dashboard
+        layout_settings: {  }
+        page_title: 'Moderation Dashboard'
+        storage_type: page_manager
+        storage_id: moderation_dashboard-panels_variant-0
+        builder: standard
+      page: moderation_dashboard
+      weight: 0
+      selection_criteria: {  }
+      selection_logic: and
+      static_context: {  }
+      _core:
+        default_config_hash: XHjA0_Myfby6ldNgF6_8QmhgM1dfSjKsAVM1yot-FRQ
+  -
+    collection: ''
+    name: views.view.content_moderation_dashboard_in_review
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - moderation_dashboard
+        module:
+          - content_moderation
+          - node
+          - user
+      id: content_moderation_dashboard_in_review
+      label: 'Moderation Dashboard In Review'
+      module: views
+      description: ''
+      tag: ''
+      base_table: node_field_revision
+      base_field: vid
+      core: 8.x
+      display:
+        default:
+          display_plugin: default
+          id: default
+          display_title: Master
+          position: 0
+          display_options:
+            access:
+              type: perm
+              options:
+                perm: 'view all revisions'
+            cache:
+              type: tag
+              options: {  }
+            query:
+              type: views_query
+              options:
+                disable_sql_rewrite: false
+                distinct: false
+                replica: false
+                query_comment: ''
+                query_tags: {  }
+            exposed_form:
+              type: basic
+              options:
+                submit_button: Apply
+                reset_button: false
+                reset_button_label: Reset
+                exposed_sorts_label: 'Sort by'
+                expose_sort_order: true
+                sort_asc_label: Asc
+                sort_desc_label: Desc
+            pager:
+              type: mini
+              options:
+                items_per_page: 5
+                offset: 0
+                id: 0
+                total_pages: null
+                tags:
+                  previous: ‹‹
+                  next: ››
+                expose:
+                  items_per_page: false
+                  items_per_page_label: 'Items per page'
+                  items_per_page_options: '5, 10, 25, 50'
+                  items_per_page_options_all: false
+                  items_per_page_options_all_label: '- All -'
+                  offset: false
+                  offset_label: Offset
+            style:
+              type: default
+              options:
+                grouping: {  }
+                row_class: ''
+                default_row_class: true
+                uses_fields: false
+            row:
+              type: fields
+              options:
+                inline: {  }
+                separator: ''
+                hide_empty: false
+                default_field_elements: true
+            fields:
+              title:
+                id: title
+                table: node_field_revision
+                field: title
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: false
+                  ellipsis: false
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: string
+                settings:
+                  link_to_entity: true
+                group_column: value
+                group_columns: {  }
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+                entity_type: node
+                entity_field: title
+                plugin_id: field
+            filters:
+              latest_revision:
+                id: latest_revision
+                table: node_revision
+                field: latest_revision
+                relationship: none
+                group_type: group
+                admin_label: ''
+                operator: '='
+                value: ''
+                group: 1
+                exposed: false
+                expose:
+                  operator_id: ''
+                  label: ''
+                  description: ''
+                  use_operator: false
+                  operator: ''
+                  identifier: ''
+                  required: false
+                  remember: false
+                  multiple: false
+                  remember_roles:
+                    authenticated: authenticated
+                is_grouped: false
+                group_info:
+                  label: ''
+                  description: ''
+                  identifier: ''
+                  optional: true
+                  widget: select
+                  multiple: false
+                  remember: false
+                  default_group: All
+                  default_group_multiple: {  }
+                  group_items: {  }
+                entity_type: node
+                plugin_id: latest_revision
+            sorts:
+              changed:
+                id: changed
+                table: node_field_revision
+                field: changed
+                relationship: none
+                group_type: group
+                admin_label: ''
+                order: ASC
+                exposed: false
+                expose:
+                  label: ''
+                granularity: second
+                entity_type: node
+                entity_field: changed
+                plugin_id: date
+            header: {  }
+            footer: {  }
+            empty:
+              area_text_custom:
+                id: area_text_custom
+                table: views
+                field: area_text_custom
+                relationship: none
+                group_type: group
+                admin_label: ''
+                empty: true
+                tokenize: false
+                content: 'There is no content available for review.'
+                plugin_id: text_custom
+            relationships: {  }
+            arguments: {  }
+            display_extenders: {  }
+            use_ajax: true
+            title: 'Moderation Dashboard in Review'
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - url.query_args
+              - 'user.node_grants:view'
+              - user.permissions
+            tags: {  }
+        block_1:
+          display_plugin: block
+          id: block_1
+          display_title: 'In review'
+          position: 1
+          display_options:
+            display_extenders: {  }
+            filters:
+              latest_revision:
+                id: latest_revision
+                table: node_revision
+                field: latest_revision
+                relationship: none
+                group_type: group
+                admin_label: ''
+                operator: '='
+                value: ''
+                group: 1
+                exposed: false
+                expose:
+                  operator_id: ''
+                  label: ''
+                  description: ''
+                  use_operator: false
+                  operator: ''
+                  identifier: ''
+                  required: false
+                  remember: false
+                  multiple: false
+                  remember_roles:
+                    authenticated: authenticated
+                is_grouped: false
+                group_info:
+                  label: ''
+                  description: ''
+                  identifier: ''
+                  optional: true
+                  widget: select
+                  multiple: false
+                  remember: false
+                  default_group: All
+                  default_group_multiple: {  }
+                  group_items: {  }
+                entity_type: node
+                plugin_id: latest_revision
+              moderation_state:
+                id: moderation_state
+                table: node_field_revision
+                field: moderation_state
+                relationship: none
+                group_type: group
+                admin_label: ''
+                operator: in
+                value:
+                  editorial-review: editorial-review
+                group: 1
+                exposed: false
+                expose:
+                  operator_id: ''
+                  label: ''
+                  description: ''
+                  use_operator: false
+                  operator: ''
+                  identifier: ''
+                  required: false
+                  remember: false
+                  multiple: false
+                  remember_roles:
+                    authenticated: authenticated
+                  reduce: false
+                is_grouped: false
+                group_info:
+                  label: ''
+                  description: ''
+                  identifier: ''
+                  optional: true
+                  widget: select
+                  multiple: false
+                  remember: false
+                  default_group: All
+                  default_group_multiple: {  }
+                  group_items: {  }
+                entity_type: node
+                plugin_id: moderation_state_filter
+            defaults:
+              filters: false
+              filter_groups: false
+            filter_groups:
+              operator: AND
+              groups:
+                1: AND
+            display_description: ''
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - url.query_args
+              - 'user.node_grants:view'
+              - user.permissions
+            tags:
+              - 'config:workflow_list'
+        block_2:
+          display_plugin: block
+          id: block_2
+          display_title: 'In draft'
+          position: 1
+          display_options:
+            display_extenders: {  }
+            filters:
+              latest_revision:
+                id: latest_revision
+                table: node_revision
+                field: latest_revision
+                relationship: none
+                group_type: group
+                admin_label: ''
+                operator: '='
+                value: ''
+                group: 1
+                exposed: false
+                expose:
+                  operator_id: ''
+                  label: ''
+                  description: ''
+                  use_operator: false
+                  operator: ''
+                  identifier: ''
+                  required: false
+                  remember: false
+                  multiple: false
+                  remember_roles:
+                    authenticated: authenticated
+                is_grouped: false
+                group_info:
+                  label: ''
+                  description: ''
+                  identifier: ''
+                  optional: true
+                  widget: select
+                  multiple: false
+                  remember: false
+                  default_group: All
+                  default_group_multiple: {  }
+                  group_items: {  }
+                entity_type: node
+                plugin_id: latest_revision
+              moderation_state:
+                id: moderation_state
+                table: node_field_revision
+                field: moderation_state
+                relationship: none
+                group_type: group
+                admin_label: ''
+                operator: in
+                value:
+                  editorial-draft: editorial-draft
+                group: 1
+                exposed: false
+                expose:
+                  operator_id: ''
+                  label: ''
+                  description: ''
+                  use_operator: false
+                  operator: ''
+                  identifier: ''
+                  required: false
+                  remember: false
+                  multiple: false
+                  remember_roles:
+                    authenticated: authenticated
+                  reduce: false
+                is_grouped: false
+                group_info:
+                  label: ''
+                  description: ''
+                  identifier: ''
+                  optional: true
+                  widget: select
+                  multiple: false
+                  remember: false
+                  default_group: All
+                  default_group_multiple: {  }
+                  group_items: {  }
+                entity_type: node
+                plugin_id: moderation_state_filter
+            defaults:
+              filters: false
+              filter_groups: false
+              empty: false
+              title: false
+            filter_groups:
+              operator: AND
+              groups:
+                1: AND
+            display_description: ''
+            empty:
+              area_text_custom:
+                id: area_text_custom
+                table: views
+                field: area_text_custom
+                relationship: none
+                group_type: group
+                admin_label: ''
+                empty: true
+                tokenize: false
+                content: 'There is no draft content.'
+                plugin_id: text_custom
+            title: 'In draft'
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - url.query_args
+              - 'user.node_grants:view'
+              - user.permissions
+            tags:
+              - 'config:workflow_list'
+        block_3:
+          display_plugin: block
+          id: block_3
+          display_title: 'Your drafts'
+          position: 1
+          display_options:
+            display_extenders: {  }
+            filters:
+              latest_revision:
+                id: latest_revision
+                table: node_revision
+                field: latest_revision
+                relationship: none
+                group_type: group
+                admin_label: ''
+                operator: '='
+                value: ''
+                group: 1
+                exposed: false
+                expose:
+                  operator_id: ''
+                  label: ''
+                  description: ''
+                  use_operator: false
+                  operator: ''
+                  identifier: ''
+                  required: false
+                  remember: false
+                  multiple: false
+                  remember_roles:
+                    authenticated: authenticated
+                is_grouped: false
+                group_info:
+                  label: ''
+                  description: ''
+                  identifier: ''
+                  optional: true
+                  widget: select
+                  multiple: false
+                  remember: false
+                  default_group: All
+                  default_group_multiple: {  }
+                  group_items: {  }
+                entity_type: node
+                plugin_id: latest_revision
+              moderation_state:
+                id: moderation_state
+                table: node_field_revision
+                field: moderation_state
+                relationship: none
+                group_type: group
+                admin_label: ''
+                operator: in
+                value:
+                  editorial-draft: editorial-draft
+                group: 1
+                exposed: false
+                expose:
+                  operator_id: ''
+                  label: ''
+                  description: ''
+                  use_operator: false
+                  operator: ''
+                  identifier: ''
+                  required: false
+                  remember: false
+                  multiple: false
+                  remember_roles:
+                    authenticated: authenticated
+                  reduce: false
+                is_grouped: false
+                group_info:
+                  label: ''
+                  description: ''
+                  identifier: ''
+                  optional: true
+                  widget: select
+                  multiple: false
+                  remember: false
+                  default_group: All
+                  default_group_multiple: {  }
+                  group_items: {  }
+                entity_type: node
+                plugin_id: moderation_state_filter
+            defaults:
+              filters: false
+              filter_groups: false
+              empty: false
+              title: false
+              arguments: false
+            filter_groups:
+              operator: AND
+              groups:
+                1: AND
+            display_description: ''
+            empty:
+              area_text_custom:
+                id: area_text_custom
+                table: views
+                field: area_text_custom
+                relationship: none
+                group_type: group
+                admin_label: ''
+                empty: true
+                tokenize: false
+                content: 'No draft content was found.'
+                plugin_id: text_custom
+            title: 'Your drafts'
+            arguments:
+              uid:
+                id: uid
+                table: node_field_revision
+                field: uid
+                relationship: none
+                group_type: group
+                admin_label: ''
+                default_action: default
+                exception:
+                  value: all
+                  title_enable: false
+                  title: All
+                title_enable: false
+                title: ''
+                default_argument_type: user
+                default_argument_options:
+                  user: false
+                default_argument_skip_url: false
+                summary_options:
+                  base_path: ''
+                  count: true
+                  items_per_page: 25
+                  override: false
+                summary:
+                  sort_order: asc
+                  number_of_records: 0
+                  format: default_summary
+                specify_validation: false
+                validate:
+                  type: none
+                  fail: 'not found'
+                validate_options: {  }
+                break_phrase: false
+                not: false
+                entity_type: node
+                entity_field: uid
+                plugin_id: numeric
+              'null':
+                id: 'null'
+                table: views
+                field: 'null'
+                relationship: none
+                group_type: group
+                admin_label: 'Logged-in user'
+                default_action: default
+                exception:
+                  value: all
+                  title_enable: false
+                  title: All
+                title_enable: true
+                title: '{%if raw_arguments.uid == raw_arguments.null %}{{"Your drafts"|t}}{%else%} {{"User''s drafts"|t}}{% endif %}'
+                default_argument_type: current_user
+                default_argument_options: {  }
+                default_argument_skip_url: true
+                summary_options:
+                  base_path: ''
+                  count: true
+                  items_per_page: 25
+                  override: false
+                summary:
+                  sort_order: asc
+                  number_of_records: 0
+                  format: default_summary
+                specify_validation: false
+                validate:
+                  type: none
+                  fail: 'not found'
+                validate_options: {  }
+                must_not_be: false
+                plugin_id: 'null'
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - url
+              - url.query_args
+              - user
+              - 'user.node_grants:view'
+              - user.permissions
+            tags:
+              - 'config:workflow_list'
+      _core:
+        default_config_hash: YZeq8A0OVc6AgvaPrs7e75Y1O354oa6MG0UM1msheAo
+  -
+    collection: ''
+    name: views.view.moderation_dashboard_recent_changes
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - moderation_dashboard
+        module:
+          - node
+          - user
+      id: moderation_dashboard_recent_changes
+      label: 'Moderation Dashboard Recent Changes'
+      module: views
+      description: ''
+      tag: ''
+      base_table: node_field_revision
+      base_field: vid
+      core: 8.x
+      display:
+        default:
+          display_plugin: default
+          id: default
+          display_title: Master
+          position: 0
+          display_options:
+            access:
+              type: perm
+              options:
+                perm: 'view all revisions'
+            cache:
+              type: tag
+              options: {  }
+            query:
+              type: views_query
+              options:
+                disable_sql_rewrite: false
+                distinct: false
+                replica: false
+                query_comment: ''
+                query_tags: {  }
+            exposed_form:
+              type: basic
+              options:
+                submit_button: Apply
+                reset_button: false
+                reset_button_label: Reset
+                exposed_sorts_label: 'Sort by'
+                expose_sort_order: true
+                sort_asc_label: Asc
+                sort_desc_label: Desc
+            pager:
+              type: mini
+              options:
+                items_per_page: 5
+                offset: 0
+                id: 2
+                total_pages: null
+                tags:
+                  previous: ‹‹
+                  next: ››
+                expose:
+                  items_per_page: false
+                  items_per_page_label: 'Items per page'
+                  items_per_page_options: '5, 10, 25, 50'
+                  items_per_page_options_all: false
+                  items_per_page_options_all_label: '- All -'
+                  offset: false
+                  offset_label: Offset
+            style:
+              type: default
+            row:
+              type: fields
+            fields:
+              title:
+                id: title
+                table: node_field_revision
+                field: title
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: false
+                  ellipsis: false
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: h5
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: string
+                settings:
+                  link_to_entity: true
+                group_column: value
+                group_columns: {  }
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+                entity_type: node
+                entity_field: title
+                plugin_id: field
+              revision_log:
+                id: revision_log
+                table: node_revision
+                field: revision_log
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: true
+                  ellipsis: true
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: basic_string
+                settings: {  }
+                group_column: value
+                group_columns: {  }
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+                entity_type: node
+                entity_field: revision_log
+                plugin_id: field
+              revision_uid:
+                id: revision_uid
+                table: node_revision
+                field: revision_uid
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: true
+                  ellipsis: true
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: target_id
+                type: entity_reference_label
+                settings:
+                  link: true
+                group_column: target_id
+                group_columns: {  }
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+                entity_type: node
+                entity_field: revision_uid
+                plugin_id: field
+              revision_timestamp:
+                id: revision_timestamp
+                table: node_revision
+                field: revision_timestamp
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: true
+                  ellipsis: true
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: timestamp_ago
+                settings:
+                  granularity: 2
+                group_column: value
+                group_columns: {  }
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+                entity_type: node
+                entity_field: revision_timestamp
+                plugin_id: field
+            filters:
+              langcode:
+                id: langcode
+                table: node_field_revision
+                field: langcode
+                relationship: none
+                group_type: group
+                admin_label: ''
+                operator: in
+                value:
+                  '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+                group: 1
+                exposed: false
+                expose:
+                  operator_id: ''
+                  label: ''
+                  description: ''
+                  use_operator: false
+                  operator: ''
+                  identifier: ''
+                  required: false
+                  remember: false
+                  multiple: false
+                  remember_roles:
+                    authenticated: authenticated
+                  reduce: false
+                is_grouped: false
+                group_info:
+                  label: ''
+                  description: ''
+                  identifier: ''
+                  optional: true
+                  widget: select
+                  multiple: false
+                  remember: false
+                  default_group: All
+                  default_group_multiple: {  }
+                  group_items: {  }
+                entity_type: node
+                entity_field: langcode
+                plugin_id: language
+            sorts:
+              changed:
+                id: changed
+                table: node_field_revision
+                field: changed
+                order: DESC
+                entity_type: node
+                entity_field: changed
+                plugin_id: date
+                relationship: none
+                group_type: group
+                admin_label: ''
+                exposed: false
+                expose:
+                  label: ''
+                granularity: second
+            title: 'Moderation Dashboard Recent Changes'
+            header: {  }
+            footer: {  }
+            empty:
+              area_text_custom:
+                id: area_text_custom
+                table: views
+                field: area_text_custom
+                relationship: none
+                group_type: group
+                admin_label: ''
+                empty: true
+                tokenize: false
+                content: 'There is no content updated recently.'
+                plugin_id: text_custom
+            relationships: {  }
+            arguments: {  }
+            display_extenders: {  }
+            use_ajax: true
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - url.query_args
+              - 'user.node_grants:view'
+              - user.permissions
+            tags: {  }
+        block_1:
+          display_plugin: block
+          id: block_1
+          display_title: 'Recent Changes'
+          position: 1
+          display_options:
+            display_extenders: {  }
+            defaults:
+              title: false
+            title: 'Recent Changes'
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - url.query_args
+              - 'user.node_grants:view'
+              - user.permissions
+            tags: {  }
+        block_2:
+          display_plugin: block
+          id: block_2
+          display_title: 'Your activity'
+          position: 2
+          display_options:
+            display_extenders: {  }
+            display_description: ''
+            arguments:
+              uid:
+                id: uid
+                table: node_field_revision
+                field: uid
+                relationship: none
+                group_type: group
+                admin_label: ''
+                default_action: default
+                exception:
+                  value: all
+                  title_enable: false
+                  title: All
+                title_enable: false
+                title: ''
+                default_argument_type: user
+                default_argument_options:
+                  user: false
+                default_argument_skip_url: false
+                summary_options:
+                  base_path: ''
+                  count: true
+                  items_per_page: 25
+                  override: false
+                summary:
+                  sort_order: asc
+                  number_of_records: 0
+                  format: default_summary
+                specify_validation: false
+                validate:
+                  type: none
+                  fail: 'not found'
+                validate_options: {  }
+                break_phrase: false
+                not: false
+                entity_type: node
+                entity_field: uid
+                plugin_id: numeric
+              'null':
+                id: 'null'
+                table: views
+                field: 'null'
+                relationship: none
+                group_type: group
+                admin_label: 'Logged-in user'
+                default_action: default
+                exception:
+                  value: all
+                  title_enable: false
+                  title: All
+                title_enable: true
+                title: '{%if raw_arguments.uid == raw_arguments.null%}{{"Your activity"|t}}{%else%}{{"User''s activity"|t}}{%endif%}'
+                default_argument_type: current_user
+                default_argument_options: {  }
+                default_argument_skip_url: true
+                summary_options:
+                  base_path: ''
+                  count: true
+                  items_per_page: 25
+                  override: false
+                summary:
+                  sort_order: asc
+                  number_of_records: 0
+                  format: default_summary
+                specify_validation: false
+                validate:
+                  type: none
+                  fail: 'not found'
+                validate_options: {  }
+                must_not_be: false
+                plugin_id: 'null'
+            defaults:
+              arguments: false
+              title: false
+              empty: false
+            title: 'Your activity'
+            empty:
+              area_text_custom:
+                id: area_text_custom
+                table: views
+                field: area_text_custom
+                relationship: none
+                group_type: group
+                admin_label: ''
+                empty: true
+                tokenize: false
+                content: 'Activity log is empty.'
+                plugin_id: text_custom
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - url
+              - url.query_args
+              - user
+              - 'user.node_grants:view'
+              - user.permissions
+            tags: {  }
+      _core:
+        default_config_hash: ob1ECiaAiewMAuB9xKFBmr_fo-fBgHklk7Y_0-lKZYc
+  -
+    collection: ''
+    name: views.view.moderation_dashboard_recently_created
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        enforced:
+          module:
+            - moderation_dashboard
+        module:
+          - node
+          - user
+      id: moderation_dashboard_recently_created
+      label: 'Moderation Dashboard Recently Created'
+      module: views
+      description: ''
+      tag: ''
+      base_table: node_field_data
+      base_field: nid
+      core: 8.x
+      display:
+        default:
+          display_plugin: default
+          id: default
+          display_title: Master
+          position: 0
+          display_options:
+            access:
+              type: perm
+              options:
+                perm: 'access content'
+            cache:
+              type: tag
+              options: {  }
+            query:
+              type: views_query
+              options:
+                disable_sql_rewrite: false
+                distinct: false
+                replica: false
+                query_comment: ''
+                query_tags: {  }
+            exposed_form:
+              type: basic
+              options:
+                submit_button: Apply
+                reset_button: false
+                reset_button_label: Reset
+                exposed_sorts_label: 'Sort by'
+                expose_sort_order: true
+                sort_asc_label: Asc
+                sort_desc_label: Desc
+            pager:
+              type: mini
+              options:
+                items_per_page: 5
+                offset: 0
+                id: 3
+                total_pages: null
+                tags:
+                  previous: ‹‹
+                  next: ››
+                expose:
+                  items_per_page: false
+                  items_per_page_label: 'Items per page'
+                  items_per_page_options: '5, 10, 25, 50'
+                  items_per_page_options_all: false
+                  items_per_page_options_all_label: '- All -'
+                  offset: false
+                  offset_label: Offset
+            style:
+              type: default
+            row:
+              type: fields
+            fields:
+              title:
+                id: title
+                table: node_field_data
+                field: title
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: ''
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: true
+                  ellipsis: true
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: h5
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: string
+                settings:
+                  link_to_entity: true
+                group_column: value
+                group_columns: {  }
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+                plugin_id: field
+              created:
+                id: created
+                table: node_field_data
+                field: created
+                relationship: none
+                group_type: group
+                admin_label: ''
+                label: 'Created '
+                exclude: false
+                alter:
+                  alter_text: false
+                  text: ''
+                  make_link: false
+                  path: ''
+                  absolute: false
+                  external: false
+                  replace_spaces: false
+                  path_case: none
+                  trim_whitespace: false
+                  alt: ''
+                  rel: ''
+                  link_class: ''
+                  prefix: ''
+                  suffix: ''
+                  target: ''
+                  nl2br: false
+                  max_length: 0
+                  word_boundary: true
+                  ellipsis: true
+                  more_link: false
+                  more_link_text: ''
+                  more_link_path: ''
+                  strip_tags: false
+                  trim: false
+                  preserve_tags: ''
+                  html: false
+                element_type: ''
+                element_class: ''
+                element_label_type: ''
+                element_label_class: ''
+                element_label_colon: false
+                element_wrapper_type: ''
+                element_wrapper_class: ''
+                element_default_classes: true
+                empty: ''
+                hide_empty: false
+                empty_zero: false
+                hide_alter_empty: true
+                click_sort_column: value
+                type: timestamp_ago
+                settings:
+                  granularity: 2
+                group_column: value
+                group_columns: {  }
+                group_rows: true
+                delta_limit: 0
+                delta_offset: 0
+                delta_reversed: false
+                delta_first_last: false
+                multi_type: separator
+                separator: ', '
+                field_api_classes: false
+                entity_type: node
+                entity_field: created
+                plugin_id: field
+            filters:
+              langcode:
+                id: langcode
+                table: node_field_data
+                field: langcode
+                relationship: none
+                group_type: group
+                admin_label: ''
+                operator: in
+                value:
+                  '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+                group: 1
+                exposed: false
+                expose:
+                  operator_id: ''
+                  label: ''
+                  description: ''
+                  use_operator: false
+                  operator: ''
+                  identifier: ''
+                  required: false
+                  remember: false
+                  multiple: false
+                  remember_roles:
+                    authenticated: authenticated
+                  reduce: false
+                is_grouped: false
+                group_info:
+                  label: ''
+                  description: ''
+                  identifier: ''
+                  optional: true
+                  widget: select
+                  multiple: false
+                  remember: false
+                  default_group: All
+                  default_group_multiple: {  }
+                  group_items: {  }
+                entity_type: node
+                entity_field: langcode
+                plugin_id: language
+            sorts:
+              created:
+                id: created
+                table: node_field_data
+                field: created
+                relationship: none
+                group_type: group
+                admin_label: ''
+                order: DESC
+                exposed: false
+                expose:
+                  label: ''
+                granularity: second
+                entity_type: node
+                entity_field: created
+                plugin_id: date
+            title: 'Moderation Dashboard Recently Created'
+            header: {  }
+            footer: {  }
+            empty:
+              area_text_custom:
+                id: area_text_custom
+                table: views
+                field: area_text_custom
+                relationship: none
+                group_type: group
+                admin_label: ''
+                empty: true
+                tokenize: false
+                content: 'There is no content created recently.'
+                plugin_id: text_custom
+            relationships: {  }
+            arguments: {  }
+            display_extenders: {  }
+            use_ajax: true
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - url.query_args
+              - 'user.node_grants:view'
+              - user.permissions
+            tags: {  }
+        block_1:
+          display_plugin: block
+          id: block_1
+          display_title: 'Recently created'
+          position: 1
+          display_options:
+            display_extenders: {  }
+            defaults:
+              title: false
+            title: 'Recently Created'
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - url.query_args
+              - 'user.node_grants:view'
+              - user.permissions
+            tags: {  }
+        block_2:
+          display_plugin: block
+          id: block_2
+          display_title: 'Content you created'
+          position: 2
+          display_options:
+            display_extenders: {  }
+            display_description: ''
+            title: 'Content you created'
+            empty:
+              area_text_custom:
+                id: area_text_custom
+                table: views
+                field: area_text_custom
+                relationship: none
+                group_type: group
+                admin_label: ''
+                empty: true
+                tokenize: false
+                content: 'No content was found.'
+                plugin_id: text_custom
+            defaults:
+              title: false
+              arguments: false
+              empty: false
+            arguments:
+              uid:
+                id: uid
+                table: node_field_data
+                field: uid
+                relationship: none
+                group_type: group
+                admin_label: ''
+                default_action: default
+                exception:
+                  value: all
+                  title_enable: false
+                  title: All
+                title_enable: false
+                title: ''
+                default_argument_type: user
+                default_argument_options:
+                  user: false
+                default_argument_skip_url: false
+                summary_options:
+                  base_path: ''
+                  count: true
+                  items_per_page: 25
+                  override: false
+                summary:
+                  sort_order: asc
+                  number_of_records: 0
+                  format: default_summary
+                specify_validation: false
+                validate:
+                  type: none
+                  fail: 'not found'
+                validate_options: {  }
+                break_phrase: false
+                not: false
+                entity_type: node
+                entity_field: uid
+                plugin_id: numeric
+              'null':
+                id: 'null'
+                table: views
+                field: 'null'
+                relationship: none
+                group_type: group
+                admin_label: 'Current user'
+                default_action: default
+                exception:
+                  value: all
+                  title_enable: false
+                  title: All
+                title_enable: true
+                title: '{%if raw_arguments.uid == raw_arguments.null%}{{"Content you created"|t}}{%else%}{{"Content created by user"|t}}{%endif%}'
+                default_argument_type: current_user
+                default_argument_options: {  }
+                default_argument_skip_url: true
+                summary_options:
+                  base_path: ''
+                  count: true
+                  items_per_page: 25
+                  override: false
+                summary:
+                  sort_order: asc
+                  number_of_records: 0
+                  format: default_summary
+                specify_validation: false
+                validate:
+                  type: none
+                  fail: 'not found'
+                validate_options: {  }
+                must_not_be: false
+                plugin_id: 'null'
+          cache_metadata:
+            max-age: -1
+            contexts:
+              - 'languages:language_content'
+              - 'languages:language_interface'
+              - url
+              - url.query_args
+              - user
+              - 'user.node_grants:view'
+              - user.permissions
+            tags: {  }
+      _core:
+        default_config_hash: suMnOlU9dguPE_4PpGuKS-7FueFjxyoWYoyTcU7PfBI

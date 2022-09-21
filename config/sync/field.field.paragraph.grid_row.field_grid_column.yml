@@ -1,0 +1,85 @@
+uuid: e69d26c6-d2c3-4983-aec3-6cb35742b9bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grid_column
+    - paragraphs.paragraphs_type.grid_column
+    - paragraphs.paragraphs_type.grid_row
+  module:
+    - entity_reference_revisions
+id: paragraph.grid_row.field_grid_column
+field_name: field_grid_column
+entity_type: paragraph
+bundle: grid_row
+label: 'Grid column'
+description: 'Create a new column.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      grid_column: grid_column
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 20
+        enabled: false
+      accordion_item:
+        weight: 21
+        enabled: false
+      call_to_action:
+        weight: 22
+        enabled: false
+      card:
+        weight: 23
+        enabled: false
+      card_layout:
+        weight: 24
+        enabled: false
+      column:
+        weight: 34
+        enabled: false
+      content_list:
+        weight: 25
+        enabled: false
+      form:
+        weight: 26
+        enabled: false
+      from_library:
+        weight: 27
+        enabled: false
+      graphic_list:
+        weight: 28
+        enabled: false
+      grid:
+        weight: 35
+        enabled: false
+      grid_column:
+        weight: 29
+        enabled: true
+      grid_row:
+        weight: 30
+        enabled: false
+      hero:
+        weight: 36
+        enabled: false
+      media:
+        weight: 32
+        enabled: false
+      media_block:
+        weight: 33
+        enabled: false
+      slider:
+        weight: 31
+        enabled: false
+      text:
+        weight: 37
+        enabled: false
+      video:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

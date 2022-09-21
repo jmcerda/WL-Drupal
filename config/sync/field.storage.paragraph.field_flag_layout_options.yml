@@ -1,0 +1,27 @@
+uuid: 2f77dbc3-b003-4ecd-a907-daa77891f438
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_flag_layout_options
+field_name: field_flag_layout_options
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: flag_default
+      label: Default
+    -
+      value: flag_media_on_right
+      label: 'Media on right'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

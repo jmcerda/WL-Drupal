@@ -1,0 +1,22 @@
+uuid: 102269bc-5b7f-4e35-9746-cb97e6a46bac
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: leadership
+label: Leadership
+type: 'canonical_entities:node'
+pattern: '/about/leadership/[node:field_job_title]'
+selection_criteria:
+  1c35815c-4117-4b3a-96d9-d090e215a8d8:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 1c35815c-4117-4b3a-96d9-d090e215a8d8
+    context_mapping:
+      node: node
+    bundles:
+      person: person
+selection_logic: and
+weight: -6
+relationships: {  }

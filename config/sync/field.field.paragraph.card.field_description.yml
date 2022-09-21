@@ -1,0 +1,21 @@
+uuid: 62778fba-fd78-4bf6-8e7c-c89db50755f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.card
+  module:
+    - text
+id: paragraph.card.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: card
+label: Description
+description: 'A short description/summary of the targeted content this card is associated with. Please limit character count for display purposes.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

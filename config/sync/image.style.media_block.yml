@@ -1,0 +1,16 @@
+uuid: f718f6b0-8152-4b0e-b33c-afad078b742f
+langcode: en
+status: true
+dependencies: {  }
+name: media_block
+label: 'Media block'
+effects:
+  c8fe97e7-5740-42b6-a6db-99a01eea9db5:
+    uuid: c8fe97e7-5740-42b6-a6db-99a01eea9db5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 125
+      height: 125
+      anchor: center-center
+pipeline: __default__

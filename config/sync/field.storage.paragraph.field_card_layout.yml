@@ -1,0 +1,27 @@
+uuid: fb34e818-367f-4fd4-ad1c-ac99b40833c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_card_layout
+field_name: field_card_layout
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: standard_layout
+      label: 'Standard layout'
+    -
+      value: flag_layout
+      label: 'Flag layout'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

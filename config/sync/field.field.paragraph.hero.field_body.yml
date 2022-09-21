@@ -1,0 +1,21 @@
+uuid: 19017bd4-a748-4359-af4e-ed8b055a0141
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.hero
+  module:
+    - text
+id: paragraph.hero.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: hero
+label: Text
+description: 'Intended as ''teaser'' text, please limit the character count of this field for display purposes.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

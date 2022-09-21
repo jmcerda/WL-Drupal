@@ -1,0 +1,22 @@
+uuid: 0bff8ad5-6b44-4740-b23d-3252a513e3ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - yoast_seo
+id: config_sync.module.yoast_seo
+snapshotSet: config_sync
+extensionType: module
+extensionName: yoast_seo
+items:
+  -
+    collection: ''
+    name: yoast_seo.settings
+    data:
+      score_rules:
+        0: 'Not available'
+        8: Good
+        1: Bad
+        5: Okay
+      _core:
+        default_config_hash: scloXmEpCZcc1pXE1TM5xvimeu9IlMULiqak9nBh1Ac

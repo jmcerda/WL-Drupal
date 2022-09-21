@@ -1,0 +1,20 @@
+uuid: 2cb93731-9a30-45f8-8b98-c685512058eb
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - uswds
+id: uswds_breadcrumbs
+theme: uswds
+region: ''
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

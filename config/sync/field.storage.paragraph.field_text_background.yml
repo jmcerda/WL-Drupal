@@ -1,0 +1,174 @@
+uuid: 4afb76df-3b2a-47cf-b879-38bc59dcd002
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_text_background
+field_name: field_text_background
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bg-base-lightest
+      label: 'Base lightest'
+    -
+      value: bg-base-lighter
+      label: 'Base lighter'
+    -
+      value: bg-base-light
+      label: 'Base light'
+    -
+      value: bg-base
+      label: Base
+    -
+      value: bg-base-dark
+      label: 'Base dark'
+    -
+      value: bg-base-darker
+      label: 'Base darker'
+    -
+      value: bg-base-darkest
+      label: 'Base darkest'
+    -
+      value: bg-ink
+      label: Ink
+    -
+      value: bg-primary-lighter
+      label: 'Primary lighter'
+    -
+      value: bg-primary-light
+      label: 'Primary light'
+    -
+      value: bg-primary
+      label: Primary
+    -
+      value: bg-primary-vivid
+      label: 'Primary vivid'
+    -
+      value: bg-primary-dark
+      label: 'Primary dark'
+    -
+      value: bg-primary-darker
+      label: 'Primary darker'
+    -
+      value: bg-secondary-lighter
+      label: 'Secondary lighter'
+    -
+      value: bg-secondary-light
+      label: 'Secondary light'
+    -
+      value: bg-secondary
+      label: Secondary
+    -
+      value: bg-secondary-vivid
+      label: 'Secondary vivid'
+    -
+      value: bg-secondary-dark
+      label: 'Secondary dark'
+    -
+      value: bg-secondary-darker
+      label: 'Secondary darker'
+    -
+      value: bg-accent-cool-lighter
+      label: 'Accent cool lighter'
+    -
+      value: bg-accent-cool-light
+      label: 'Accent cool light'
+    -
+      value: bg-accent-cool
+      label: 'Accent cool'
+    -
+      value: bg-accent-cool-dark
+      label: 'Accent cool dark'
+    -
+      value: bg-accent-cool-darker
+      label: 'Accent cool darker'
+    -
+      value: bg-accent-warm-lighter
+      label: 'Accent warm lighter'
+    -
+      value: bg-accent-warm-light
+      label: 'Accent warm light'
+    -
+      value: bg-accent-warm
+      label: 'Accent warm'
+    -
+      value: bg-accent-warm-dark
+      label: 'Accent warm dark'
+    -
+      value: bg-accent-warm-darker
+      label: 'Accent warm darker'
+    -
+      value: bg-emergency
+      label: Emergency
+    -
+      value: bg-emergency-dark
+      label: 'Emergency dark'
+    -
+      value: bg-white
+      label: White
+    -
+      value: bg-gray-5
+      label: 'Gray 5'
+    -
+      value: bg-gray-10
+      label: 'Gray 10'
+    -
+      value: bg-gray-30
+      label: 'Gray 30'
+    -
+      value: bg-gray-50
+      label: 'Gray 50'
+    -
+      value: bg-gray-70
+      label: 'Gray 70'
+    -
+      value: bg-gray-90
+      label: 'Gray 90'
+    -
+      value: bg-black
+      label: Black
+    -
+      value: bg-red
+      label: Red
+    -
+      value: bg-orange
+      label: Orange
+    -
+      value: bg-gold
+      label: Gold
+    -
+      value: bg-yellow
+      label: Yellow
+    -
+      value: bg-green
+      label: Green
+    -
+      value: bg-mint
+      label: Mint
+    -
+      value: bg-cyan
+      label: Cyan
+    -
+      value: bg-blue
+      label: Blue
+    -
+      value: bg-indigo
+      label: Indigo
+    -
+      value: bg-violet
+      label: Violet
+    -
+      value: bg-magenta
+      label: Magenta
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

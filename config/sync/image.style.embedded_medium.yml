@@ -1,0 +1,16 @@
+uuid: a8cd7305-80cb-4ed3-9aa1-abda06ad2524
+langcode: en
+status: true
+dependencies: {  }
+name: embedded_medium
+label: 'Embedded - Medium'
+effects:
+  1e106845-81ec-4127-8dab-33381a74254f:
+    uuid: 1e106845-81ec-4127-8dab-33381a74254f
+    id: image_scale
+    weight: 1
+    data:
+      width: 960
+      height: 960
+      upscale: false
+pipeline: __default__

@@ -1,0 +1,9 @@
+uuid: 4c31084f-680d-4ef0-b584-cb62f7735c78
+langcode: en
+status: true
+dependencies: {  }
+id: front
+label: 'Front page'
+tags:
+  canonical_url: '[site:url]'
+  shortlink: '[site:url]'

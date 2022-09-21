@@ -1,0 +1,18 @@
+uuid: 9c27080b-3ea8-43b1-ab96-f09ff2213b4b
+langcode: en
+status: true
+dependencies: {  }
+id: node
+label: Content
+tags:
+  description: '[node:summary]'
+  canonical_url: '[node:url]'
+  title: '[node:title] | [site:name]'
+  image_src: '[node:field_teaser_image]'
+  og_title: '[node:title]'
+  og_url: '[node:url]'
+  og_type: '[node:content-type]'
+  og_site_name: '[site:name]'
+  og_image: '[node:field_teaser_image]'
+  twitter_cards_page_url: '[node:original:url]'
+  twitter_cards_type: summary

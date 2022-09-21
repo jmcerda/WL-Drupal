@@ -1,0 +1,20 @@
+uuid: 5e9561a0-911c-4e80-b6a1-faec6d88cba3
+langcode: en
+status: true
+dependencies:
+  module:
+    - conflict
+id: config_sync.module.conflict
+snapshotSet: config_sync
+extensionType: module
+extensionName: conflict
+items:
+  -
+    collection: ''
+    name: conflict.settings
+    data:
+      resolution_type:
+        default:
+          default: inline
+      _core:
+        default_config_hash: TOlf083m8fS_trwWOps37oQ_0V5BRbqJHkGQzwINZsw

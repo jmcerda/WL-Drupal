@@ -1,0 +1,20 @@
+uuid: 355cb5b4-a1d1-4daf-9cc7-1d1f73f2efa5
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - uswds
+id: uswds_content
+theme: uswds
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

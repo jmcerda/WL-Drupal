@@ -1,0 +1,21 @@
+uuid: edf7e90f-2065-41d4-81b5-ffc50da5c306
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_background
+    - paragraphs.paragraphs_type.call_to_action
+  module:
+    - options
+id: paragraph.call_to_action.field_text_background
+field_name: field_text_background
+entity_type: paragraph
+bundle: call_to_action
+label: Color
+description: 'Select a predefined background color for the content of your CTA.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

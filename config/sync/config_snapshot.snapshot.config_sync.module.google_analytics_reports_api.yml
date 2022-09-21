@@ -1,0 +1,22 @@
+uuid: c1619954-4681-41ef-bd35-12f99f832db7
+langcode: en
+status: true
+dependencies:
+  module:
+    - google_analytics_reports_api
+id: config_sync.module.google_analytics_reports_api
+snapshotSet: config_sync
+extensionType: module
+extensionName: google_analytics_reports_api
+items:
+  -
+    collection: ''
+    name: google_analytics_reports_api.settings
+    data:
+      cache_length: 259200
+      client_id: ''
+      client_secret: ''
+      default_page: ''
+      profile_id: 0
+      _core:
+        default_config_hash: Udl9NlMg0diGEIXULFQINiSkPbt4XbVpUTE7ChdUEzE

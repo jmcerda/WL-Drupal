@@ -1,0 +1,25 @@
+uuid: 9882b8e0-5942-45a2-ae29-41a989eb0859
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_opacity
+    - paragraphs.paragraphs_type.call_to_action
+id: paragraph.call_to_action.field_opacity
+field_name: field_opacity
+entity_type: paragraph
+bundle: call_to_action
+label: Opacity
+description: 'Set an opacity-level between 0 and 1. The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent.'
+required: false
+translatable: false
+default_value:
+  -
+    value: !!float 1
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 1
+  prefix: ''
+  suffix: ''
+field_type: float

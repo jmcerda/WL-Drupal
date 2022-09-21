@@ -1,0 +1,8 @@
+uuid: 2b046376-677f-4068-bc4e-8e7456feb906
+langcode: en
+status: true
+dependencies: {  }
+id: secondary-footer
+label: 'Secondary Footer Navigation'
+description: 'Menu for legal, sitemap, etc.'
+locked: false

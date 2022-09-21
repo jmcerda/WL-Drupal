@@ -1,0 +1,20 @@
+uuid: 75267f13-6caa-4f1a-b0b9-e0d6f12ac4d6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - adminimal_theme
+id: adminimal_theme_secondary_local_tasks
+theme: adminimal_theme
+region: pre_content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

@@ -1,0 +1,54 @@
+uuid: df639d49-2ce2-4087-bbd1-b32b0715b4e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view
+    - paragraphs.paragraphs_type.content_list
+  module:
+    - viewfield
+id: paragraph.content_list.field_view
+field_name: field_view
+entity_type: paragraph
+bundle: content_list
+label: View
+description: 'Choose listing view for display.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    careers: '0'
+    content: '0'
+    block_content: '0'
+    feeds_feed: '0'
+    files: '0'
+    frontpage: '0'
+    media: '0'
+    media_library: '0'
+    moderated_content: '0'
+    content_moderation_dashboard_in_review: '0'
+    moderation_dashboard_recent_changes: '0'
+    moderation_dashboard_recently_created: '0'
+    paragraphs_library: '0'
+    paragraphs_library_browser: '0'
+    user_admin_people: '0'
+    scheduler_scheduled_content: '0'
+    search: '0'
+    watchdog: '0'
+    webform_submissions: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+  allowed_display_types:
+    block: block
+    embed: '0'
+    entity_browser: '0'
+    feed: '0'
+    default: '0'
+    page: '0'
+    rest_export: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

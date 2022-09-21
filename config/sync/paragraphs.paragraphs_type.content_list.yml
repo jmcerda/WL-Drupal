@@ -1,0 +1,15 @@
+uuid: 34d024dc-49d0-4d23-864e-3ab8f6e8eeeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories: {  }
+id: content_list
+label: 'Content list'
+icon_uuid: null
+icon_default: null
+description: 'Display a list of content built as a ''View''.'
+behavior_plugins: {  }

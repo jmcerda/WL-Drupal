@@ -1,0 +1,16 @@
+uuid: 99f1f4eb-96ef-4631-8051-385066753abb
+langcode: en
+status: true
+dependencies: {  }
+name: embedded_full_width
+label: 'Embedded - Full width'
+effects:
+  4552ec2c-7b3a-4c76-9fcd-634d7041c232:
+    uuid: 4552ec2c-7b3a-4c76-9fcd-634d7041c232
+    id: image_scale
+    weight: 1
+    data:
+      width: 2048
+      height: 2048
+      upscale: false
+pipeline: __default__

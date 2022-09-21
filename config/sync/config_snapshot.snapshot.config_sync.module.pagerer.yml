@@ -1,0 +1,635 @@
+uuid: 0d11fb5b-0cb9-4401-9451-82851b078193
+langcode: en
+status: true
+dependencies:
+  module:
+    - pagerer
+id: config_sync.module.pagerer
+snapshotSet: config_sync
+extensionType: module
+extensionName: pagerer
+items:
+  -
+    collection: ''
+    name: pagerer.settings
+    data:
+      core_override_preset: core
+      url_querystring:
+        core_override: false
+        querystring_key: pg
+        index_base: 0
+        encode_method: none
+      _core:
+        default_config_hash: mOI48r0jAAs54q55bxRFCn8g6j-QsXsLFLheI6x7sSk
+  -
+    collection: ''
+    name: pagerer.style.adaptive
+    data:
+      langcode: en
+      default_config:
+        quantity: 5
+        display_mode: normal
+        display: pages
+        display_restriction: 2
+        prefix_display: false
+        suffix_display: false
+        separator_display: false
+        breaker_display: true
+        first_link: never
+        previous_link: never
+        next_link: never
+        last_link: never
+        fl_breakers: true
+        progr_links: relative
+        tags:
+          page_breaker: …
+          page_separator: '|'
+          pages:
+            prefix_label: Page
+            suffix_label: 'of @total'
+            page_current: '@number'
+            page_previous: '@number'
+            page_previous_relative: '-@offset'
+            page_next: '@number'
+            page_next_relative: +@offset
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No pages to display.'
+            page_current_title: 'Current page'
+            page_title: 'Go to page @number'
+            first_title: 'Go to first page'
+            previous_title: 'Go to previous page'
+            next_title: 'Go to next page'
+            last_title: 'Go to last page'
+            page_current_reader: 'Current page'
+            page_reader: Page
+            first_reader: 'First page'
+            previous_reader: 'Previous page'
+            next_reader: 'Next page'
+            last_reader: 'Last page'
+          items:
+            prefix_label: Item
+            suffix_label: 'of @total_items'
+            page_current: '@item'
+            page_previous: '@item'
+            page_previous_relative: '-@item_offset'
+            page_next: '@item'
+            page_next_relative: +@item_offset
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No items to display.'
+            page_current_title: 'Current items'
+            page_title: 'Go to item @item'
+            first_title: 'Go to first item'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last item'
+            page_current_reader: 'Current items'
+            page_reader: Item
+            first_reader: 'First item'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last item'
+          item_ranges:
+            prefix_label: Items
+            suffix_label: 'of @total_items'
+            page_current: '@item_low-@item_high'
+            page_previous: '@item_low-@item_high'
+            page_previous_relative: '-@item_offset'
+            page_next: '@item_low-@item_high'
+            page_next_relative: +@item_offset
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No items to display.'
+            page_current_title: 'Current items'
+            page_title: 'Go to items @item_low-@item_high'
+            first_title: 'Go to first items'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last items'
+            page_current_reader: 'Current items'
+            page_reader: Items
+            first_reader: 'First items'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last items'
+      _core:
+        default_config_hash: tAMh3Y-xcyrD7xvBOSc7x5xyatMgzp7PvkT2LWYHvAc
+  -
+    collection: ''
+    name: pagerer.style.basic
+    data:
+      langcode: en
+      default_config:
+        display: pages
+        display_restriction: 2
+        prefix_display: true
+        first_link: never
+        previous_link: not_on_first
+        next_link: not_on_last
+        last_link: never
+        tags:
+          pages:
+            prefix_label: 'Page <b>@number</b> of @total'
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No pages to display.'
+            first_title: 'Go to first page'
+            previous_title: 'Go to previous page'
+            next_title: 'Go to next page'
+            last_title: 'Go to last page'
+            first_reader: 'First page'
+            previous_reader: 'Previous page'
+            next_reader: 'Next page'
+            last_reader: 'Last page'
+          items:
+            prefix_label: 'Item <b>@item</b> of @total_items'
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No items to display.'
+            first_title: 'Go to first item'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last item'
+            first_reader: 'First item'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last item'
+          item_ranges:
+            prefix_label: 'Items <b>@item_low-@item_high</b> of @total_items'
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No items to display.'
+            first_title: 'Go to first items'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last items'
+            first_reader: 'First items'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last items'
+      _core:
+        default_config_hash: CIMBsgQI4M_WsBh0nn1FLrjeO5m-wBCfAITt31sNSvU
+  -
+    collection: ''
+    name: pagerer.style.mini
+    data:
+      langcode: en
+      default_config:
+        display_mode: widget
+        display: pages
+        display_restriction: 2
+        prefix_display: true
+        suffix_display: true
+        first_link: always
+        previous_link: always
+        next_link: always
+        last_link: always
+        widget_resize: true
+        widget_button: auto
+        tags:
+          pages:
+            prefix_label: Page
+            suffix_label: 'of @total'
+            page_current: '@number'
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No pages to display.'
+            page_current_title: 'Current page'
+            first_title: 'Go to first page'
+            previous_title: 'Go to previous page'
+            next_title: 'Go to next page'
+            last_title: 'Go to last page'
+            page_current_reader: 'Current page'
+            first_reader: 'First page'
+            previous_reader: 'Previous page'
+            next_reader: 'Next page'
+            last_reader: 'Last page'
+            widget_title: 'Enter page, then press Return.'
+          items:
+            prefix_label: Item
+            suffix_label: 'of @total_items'
+            page_current: '@item'
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No items to display.'
+            page_current_title: 'Current items'
+            first_title: 'Go to first item'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last item'
+            page_current_reader: 'Current items'
+            first_reader: 'First item'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last item'
+            widget_title: 'Enter item, then press Return.'
+      _core:
+        default_config_hash: YP4UGZ9wBNDGXik5rx5VuDxmXD6PZ-h-lYXi95VjDYQ
+  -
+    collection: ''
+    name: pagerer.style.multipane
+    data:
+      langcode: en
+      default_config:
+        panes:
+          left:
+            style: none
+            config: {  }
+          center:
+            style: standard
+            config: {  }
+          right:
+            style: none
+            config: {  }
+      _core:
+        default_config_hash: '-rL0nDexAHYtF5mmC-u-onXnyho8G__xNLvoGDHOvhM'
+  -
+    collection: ''
+    name: pagerer.style.progressive
+    data:
+      langcode: en
+      default_config:
+        quantity: 5
+        display_mode: normal
+        display: pages
+        display_restriction: 2
+        prefix_display: false
+        suffix_display: false
+        separator_display: false
+        breaker_display: true
+        first_link: never
+        previous_link: never
+        next_link: never
+        last_link: never
+        fl_breakers: true
+        progr_links: relative
+        factors: '2.5,5,10'
+        tags:
+          page_breaker: …
+          page_separator: '|'
+          pages:
+            prefix_label: Page
+            suffix_label: 'of @total'
+            page_current: '@number'
+            page_previous: '@number'
+            page_previous_relative: '-@offset'
+            page_next: '@number'
+            page_next_relative: +@offset
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No pages to display.'
+            page_current_title: 'Current page'
+            page_title: 'Go to page @number'
+            first_title: 'Go to first page'
+            previous_title: 'Go to previous page'
+            next_title: 'Go to next page'
+            last_title: 'Go to last page'
+            page_current_reader: 'Current page'
+            page_reader: Page
+            first_reader: 'First page'
+            previous_reader: 'Previous page'
+            next_reader: 'Next page'
+            last_reader: 'Last page'
+          items:
+            prefix_label: Item
+            suffix_label: 'of @total_items'
+            page_current: '@item'
+            page_previous: '@item'
+            page_previous_relative: '-@item_offset'
+            page_next: '@item'
+            page_next_relative: +@item_offset
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No items to display.'
+            page_current_title: 'Current items'
+            page_title: 'Go to item @item'
+            first_title: 'Go to first item'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last item'
+            page_current_reader: 'Current items'
+            page_reader: Item
+            first_reader: 'First item'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last item'
+          item_ranges:
+            prefix_label: Items
+            suffix_label: 'of @total_items'
+            page_current: '@item_low-@item_high'
+            page_previous: '@item_low-@item_high'
+            page_previous_relative: '-@item_offset'
+            page_next: '@item_low-@item_high'
+            page_next_relative: +@item_offset
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No items to display.'
+            page_current_title: 'Current items'
+            page_title: 'Go to items @item_low-@item_high'
+            first_title: 'Go to first items'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last items'
+            page_current_reader: 'Current items'
+            page_reader: Items
+            first_reader: 'First items'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last items'
+      _core:
+        default_config_hash: qCLM78iR4U3gKXB1a5FwOdD6in7s2_vj1_f0V3gZoqI
+  -
+    collection: ''
+    name: pagerer.style.scrollpane
+    data:
+      langcode: en
+      default_config:
+        quantity: 9
+        display: pages
+        display_restriction: 2
+        prefix_display: false
+        suffix_display: false
+        separator_display: false
+        first_link: never
+        previous_link: never
+        next_link: never
+        last_link: never
+        tags:
+          page_separator: '|'
+          pages:
+            prefix_label: Page
+            suffix_label: 'of @total'
+            page_current: '@number'
+            page_previous: '@number'
+            page_next: '@number'
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No pages to display.'
+            page_current_title: 'Current page'
+            page_title: 'Go to page @number'
+            first_title: 'Go to first page'
+            previous_title: 'Go to previous page'
+            next_title: 'Go to next page'
+            last_title: 'Go to last page'
+            page_current_reader: 'Current page'
+            page_reader: Page
+            first_reader: 'First page'
+            previous_reader: 'Previous page'
+            next_reader: 'Next page'
+            last_reader: 'Last page'
+          items:
+            prefix_label: Item
+            suffix_label: 'of @total_items'
+            page_current: '@item'
+            page_previous: '@item'
+            page_next: '@item'
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No items to display.'
+            page_current_title: 'Current items'
+            page_title: 'Go to item @item'
+            first_title: 'Go to first item'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last item'
+            page_current_reader: 'Current items'
+            page_reader: Item
+            first_reader: 'First item'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last item'
+          item_ranges:
+            prefix_label: Items
+            suffix_label: 'of @total_items'
+            page_current: '@item_low-@item_high'
+            page_previous: '@item_low-@item_high'
+            page_next: '@item_low-@item_high'
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No items to display.'
+            page_current_title: 'Current items'
+            page_title: 'Go to items @item_low-@item_high'
+            first_title: 'Go to first items'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last items'
+            page_current_reader: 'Current items'
+            page_reader: Items
+            first_reader: 'First items'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last items'
+      _core:
+        default_config_hash: ZxtqDRLnhh4NHGSvlv_On712qgz4AWz1on0rYI6m9a4
+  -
+    collection: ''
+    name: pagerer.style.slider
+    data:
+      langcode: en
+      default_config:
+        display: pages
+        display_restriction: 2
+        prefix_display: true
+        suffix_display: true
+        first_link: never
+        previous_link: never
+        next_link: never
+        last_link: never
+        slider_width: 27
+        slider_action: tickmark
+        slider_action_timeout: 0
+        slider_navigation_icons: 'yes'
+        tags:
+          pages:
+            prefix_label: Page
+            suffix_label: 'of @total'
+            page_current: '@number'
+            page_previous: '@number'
+            page_next: '@number'
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No pages to display.'
+            page_current_title: 'Current page'
+            first_title: 'Go to first page'
+            previous_title: 'Go to previous page'
+            next_title: 'Go to next page'
+            last_title: 'Go to last page'
+            page_current_reader: 'Current page'
+            first_reader: 'First page'
+            previous_reader: 'Previous page'
+            next_reader: 'Next page'
+            last_reader: 'Last page'
+            slider_title: 'Drag the handle to the page required.'
+            slider_tickmark_title: 'Then, click on the tickmark.'
+          items:
+            prefix_label: Item
+            suffix_label: 'of @total_items'
+            page_current: '@item'
+            page_previous: '@item'
+            page_next: '@item'
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No items to display.'
+            page_current_title: 'Current items'
+            first_title: 'Go to first item'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last item'
+            page_current_reader: 'Current items'
+            first_reader: 'First item'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last item'
+            slider_title: 'Drag the handle to the item required.'
+            slider_tickmark_title: 'Then, click on the tickmark.'
+          item_ranges:
+            prefix_label: Items
+            suffix_label: 'of @total_items'
+            page_current: '@item_low-@item_high'
+            page_previous: '@item_low-@item_high'
+            page_next: '@item_low-@item_high'
+            first: «
+            previous: ‹
+            next: ›
+            last: »
+            pageset_empty: 'No items to display.'
+            page_current_title: 'Current items'
+            first_title: 'Go to first items'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last items'
+            page_current_reader: 'Current items'
+            first_reader: 'First items'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last items'
+            slider_title: 'Drag the handle to the item range required.'
+            slider_tickmark_title: 'Then, click on the tickmark.'
+      _core:
+        default_config_hash: Z78iYq8wmBpdGFcOazxhaM6QKFuLEXxNMzEkPzp0JQ0
+  -
+    collection: ''
+    name: pagerer.style.standard
+    data:
+      langcode: en
+      default_config:
+        quantity: 9
+        display_mode: normal
+        display: pages
+        display_restriction: 2
+        prefix_display: false
+        suffix_display: false
+        separator_display: false
+        breaker_display: true
+        first_link: not_on_first
+        previous_link: not_on_first
+        next_link: not_on_last
+        last_link: not_on_last
+        fl_breakers: true
+        tags:
+          page_breaker: …
+          page_separator: '|'
+          pages:
+            prefix_label: Page
+            suffix_label: 'of @total'
+            page_current: '@number'
+            page_previous: '@number'
+            page_next: '@number'
+            first: '« First'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            last: 'Last »'
+            pageset_empty: 'No pages to display.'
+            page_current_title: 'Current page'
+            page_title: 'Go to page @number'
+            first_title: 'Go to first page'
+            previous_title: 'Go to previous page'
+            next_title: 'Go to next page'
+            last_title: 'Go to last page'
+            page_current_reader: 'Current page'
+            page_reader: Page
+            first_reader: 'First page'
+            previous_reader: 'Previous page'
+            next_reader: 'Next page'
+            last_reader: 'Last page'
+          items:
+            prefix_label: Item
+            suffix_label: 'of @total_items'
+            page_current: '@item'
+            page_previous: '@item'
+            page_next: '@item'
+            first: '« First'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            last: 'Last »'
+            pageset_empty: 'No items to display.'
+            page_current_title: 'Current items'
+            page_title: 'Go to item @item'
+            first_title: 'Go to first item'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last item'
+            page_current_reader: 'Current items'
+            page_reader: Item
+            first_reader: 'First item'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last item'
+          item_ranges:
+            prefix_label: Items
+            suffix_label: 'of @total_items'
+            page_current: '@item_low-@item_high'
+            page_previous: '@item_low-@item_high'
+            page_next: '@item_low-@item_high'
+            first: '« First'
+            previous: '‹ Previous'
+            next: 'Next ›'
+            last: 'Last »'
+            pageset_empty: 'No items to display.'
+            page_current_title: 'Current items'
+            page_title: 'Go to items @item_low-@item_high'
+            first_title: 'Go to first items'
+            previous_title: 'Go to previous items'
+            next_title: 'Go to next items'
+            last_title: 'Go to last items'
+            page_current_reader: 'Current items'
+            page_reader: Items
+            first_reader: 'First items'
+            previous_reader: 'Previous items'
+            next_reader: 'Next items'
+            last_reader: 'Last items'
+      _core:
+        default_config_hash: igO6H6v8MWpPKOsd1zmT-Od1xRB4Srna7mu6RBmDzD8

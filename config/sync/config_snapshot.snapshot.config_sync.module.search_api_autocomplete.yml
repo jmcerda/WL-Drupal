@@ -1,0 +1,18 @@
+uuid: 36916bc2-e05a-4d32-aaa6-d270afabf537
+langcode: en
+status: true
+dependencies:
+  module:
+    - search_api_autocomplete
+id: config_sync.module.search_api_autocomplete
+snapshotSet: config_sync
+extensionType: module
+extensionName: search_api_autocomplete
+items:
+  -
+    collection: ''
+    name: search_api_autocomplete.settings
+    data:
+      enable_custom_scripts: false
+      _core:
+        default_config_hash: f5JKUdyiasGBAc7jPj5KjLWW570WHiKAwONf0nR3qN4

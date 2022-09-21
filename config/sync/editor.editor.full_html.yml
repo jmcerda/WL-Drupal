@@ -1,0 +1,73 @@
+uuid: cde2121c-7a73-4cba-bb77-6f07d49bd4dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+  module:
+    - ckeditor
+format: full_html
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Format
+            - Styles
+            - Bold
+            - Italic
+            - Underline
+            - Strike
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
+            - Blockquote
+            - Outdent
+            - Indent
+            - Superscript
+            - Subscript
+            - RemoveFormat
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+            - Table
+        -
+          name: Media
+          items:
+            - DrupalMediaLibrary
+            - material_icons
+        -
+          name: Tools
+          items:
+            - Source
+            - HorizontalRule
+            - SpecialChar
+            - tokenbrowser
+            - content_browser
+  plugins:
+    stylescombo:
+      styles: "a.usa-button|Button - Default\r\na.usa-button.usa-button--secondary|Button - Secondary\r\na.usa-button.usa-button--accent-cool|Button - Accent cool color\r\na.usa-button.usa-button--accent-warm|Button - Accent warm color\r\na.usa-button.usa-button--base|Button - Base Color\r\na.usa-button.usa-button--outline|Button - Outline\r\na.usa-button.usa-button--outline.usa-button--outline-inverse|Button - Outline Inverse\r\na.usa-button.usa-button--big|Button - Big\r\ntable.usa-table--borderless|Borderless Table\r\np.usa-font-lead|Lead font\r\nul.usa-list|Unordered List\r\nol.usa-list|Ordered List"
+    drupallink:
+      linkit_enabled: true
+      linkit_profile: default
+    tokenbrowser:
+      token_types: {  }
+image_upload:
+  status: true
+  scheme: public
+  directory: inline-images
+  max_size: 1MB
+  max_dimensions:
+    width: null
+    height: null

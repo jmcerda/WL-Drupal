@@ -1,0 +1,16 @@
+uuid: 7b7ddbae-fdd4-42f7-a90e-f2b52166c621
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.embedded_small
+id: inline_media_image_small
+label: 'Inline - Small'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: embedded_small
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: embedded_small

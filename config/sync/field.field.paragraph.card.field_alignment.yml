@@ -1,0 +1,23 @@
+uuid: a98f23ba-f4ce-4fb5-b6f6-89f338e521f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.card
+  module:
+    - options
+id: paragraph.card.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: card
+label: Alignment
+description: 'Adds alignment to all content elements of the card.'
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

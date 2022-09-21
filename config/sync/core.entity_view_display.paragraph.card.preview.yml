@@ -1,0 +1,59 @@
+uuid: d878056a-cd05-4f34-95ad-5c290aaaa239
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.card.field_alignment
+    - field.field.paragraph.card.field_border
+    - field.field.paragraph.card.field_button
+    - field.field.paragraph.card.field_button_style
+    - field.field.paragraph.card.field_card_layout
+    - field.field.paragraph.card.field_description
+    - field.field.paragraph.card.field_flag_layout_options
+    - field.field.paragraph.card.field_icon
+    - field.field.paragraph.card.field_media
+    - field.field.paragraph.card.field_media_thumb
+    - field.field.paragraph.card.field_standard_layout_options
+    - field.field.paragraph.card.field_title
+    - paragraphs.paragraphs_type.card
+  module:
+    - link
+id: paragraph.card.preview
+targetEntityType: paragraph
+bundle: card
+mode: preview
+content:
+  field_button:
+    type: link_separate
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_alignment: true
+  field_border: true
+  field_button_style: true
+  field_card_layout: true
+  field_description: true
+  field_flag_layout_options: true
+  field_icon: true
+  field_media_thumb: true
+  field_standard_layout_options: true
+  field_title: true
+  search_api_excerpt: true

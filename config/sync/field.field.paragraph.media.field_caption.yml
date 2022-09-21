@@ -1,0 +1,21 @@
+uuid: b36f7108-7519-48f9-992c-dec9225490aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_caption
+    - paragraphs.paragraphs_type.media
+  module:
+    - text
+id: paragraph.media.field_caption
+field_name: field_caption
+entity_type: paragraph
+bundle: media
+label: Caption
+description: 'A short description/summary of the targeted content this card is associated with. Please limit characters count for display purposes.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

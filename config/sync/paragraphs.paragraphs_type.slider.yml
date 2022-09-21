@@ -1,0 +1,18 @@
+uuid: 5f03e8bd-f2a4-404f-bd65-ce6d23804cf9
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+  paragraphs_ee:
+    paragraphs_categories: {  }
+id: slider
+label: Slider
+icon_uuid: null
+icon_default: null
+description: 'A slider displaying a collection of paragraph content such as heros, graphic lists, CTAs, etc.'
+behavior_plugins: {  }

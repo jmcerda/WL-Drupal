@@ -1,0 +1,88 @@
+uuid: b12fb87e-5db2-4c32-8c9a-d3fd840ea626
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide
+    - paragraphs.paragraphs_type.call_to_action
+    - paragraphs.paragraphs_type.card_group
+    - paragraphs.paragraphs_type.graphic_list
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.slider
+  module:
+    - entity_reference_revisions
+id: paragraph.slider.field_slide
+field_name: field_slide
+entity_type: paragraph
+bundle: slider
+label: Slide
+description: 'Choose paragraphs to include in your slider.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      call_to_action: call_to_action
+      card_group: card_group
+      graphic_list: graphic_list
+      hero: hero
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -37
+        enabled: false
+      accordion_item:
+        weight: -36
+        enabled: false
+      alert:
+        weight: -33
+        enabled: false
+      call_to_action:
+        weight: -35
+        enabled: true
+      card:
+        weight: -34
+        enabled: false
+      card_group:
+        weight: -32
+        enabled: true
+      content_list:
+        weight: -31
+        enabled: false
+      form:
+        weight: -30
+        enabled: false
+      from_library:
+        weight: -29
+        enabled: false
+      graphic_list:
+        weight: -28
+        enabled: true
+      grid_column:
+        weight: -27
+        enabled: false
+      grid_row:
+        weight: -26
+        enabled: false
+      hero:
+        weight: -25
+        enabled: true
+      hero_no_title_or_text:
+        weight: -24
+        enabled: true
+      media:
+        weight: -23
+        enabled: false
+      media_block:
+        weight: -22
+        enabled: false
+      slider:
+        weight: -21
+        enabled: false
+      text:
+        weight: -20
+        enabled: false
+field_type: entity_reference_revisions

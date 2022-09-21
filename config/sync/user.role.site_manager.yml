@@ -1,0 +1,415 @@
+uuid: c0c476c8-9376-4715-8b50-0b1900901e12
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - filter.format.full_html
+    - media.type.audio_file
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.article_types
+    - taxonomy.vocabulary.tags
+    - workflows.workflow.editorial
+  module:
+    - actions_permissions
+    - ban
+    - blazy_ui
+    - block
+    - block_class
+    - block_content
+    - cer
+    - conditional_fields
+    - content_moderation
+    - contextual
+    - dropzonejs
+    - embed
+    - entity_browser
+    - entity_reference_revisions
+    - entity_usage
+    - extlink
+    - facets
+    - feeds
+    - field_ui
+    - file
+    - file_delete
+    - file_replace
+    - filter
+    - google_analytics_reports_api
+    - honeypot
+    - image
+    - imageapi_optimize
+    - linkit
+    - media
+    - metatag
+    - moderation_dashboard
+    - moderation_sidebar
+    - node
+    - page_manager
+    - panels
+    - paragraphs
+    - paragraphs_ee
+    - paragraphs_library
+    - password_policy
+    - path
+    - pathauto
+    - quickedit
+    - rabbit_hole
+    - redirect
+    - responsive_image
+    - rest
+    - scheduler
+    - schemata
+    - search_api
+    - search_api_autocomplete
+    - seckit
+    - simple_sitemap
+    - slick_ui
+    - statistics
+    - system
+    - taxonomy
+    - tfa
+    - toolbar
+    - tour
+    - update
+    - views_bulk_edit
+    - views_ui
+    - webform
+    - webform_submission_log
+    - workflows
+    - yoast_seo
+id: site_manager
+label: 'Site manager'
+weight: 25
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access any webform configuration'
+  - 'access browse_content entity browser pages'
+  - 'access browse_content_iframe entity browser pages'
+  - 'access browse_files entity browser pages'
+  - 'access browse_files_modal entity browser pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access entity usage statistics'
+  - 'access feed overview'
+  - 'access files overview'
+  - 'access in-place editing'
+  - 'access media overview'
+  - 'access own webform configuration'
+  - 'access paragraphs_library_items entity browser pages'
+  - 'access schemata data models'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'access user profiles'
+  - 'access webform overview'
+  - 'access webform submission log'
+  - 'access webform submission user'
+  - 'admin tfa settings'
+  - 'administer account settings'
+  - 'administer advanced pane settings'
+  - 'administer blazy'
+  - 'administer block classes'
+  - 'administer block_content display'
+  - 'administer block_content form display'
+  - 'administer blocks'
+  - 'administer cer'
+  - 'administer content types'
+  - 'administer display modes'
+  - 'administer embed buttons'
+  - 'administer extlink'
+  - 'administer facets'
+  - 'administer feeds_feed display'
+  - 'administer feeds_feed form display'
+  - 'administer filters'
+  - 'administer google analytics reports api'
+  - 'administer honeypot'
+  - 'administer image styles'
+  - 'administer imageapi optimize pipelines'
+  - 'administer linkit profiles'
+  - 'administer media'
+  - 'administer media display'
+  - 'administer media form display'
+  - 'administer media types'
+  - 'administer menu'
+  - 'administer meta tags'
+  - 'administer moderation sidebar'
+  - 'administer modules'
+  - 'administer node display'
+  - 'administer node form display'
+  - 'administer nodes'
+  - 'administer pages'
+  - 'administer pane access'
+  - 'administer panels layouts'
+  - 'administer panels styles'
+  - 'administer paragraph display'
+  - 'administer paragraph form display'
+  - 'administer paragraphs categories'
+  - 'administer paragraphs library'
+  - 'administer paragraphs settings'
+  - 'administer paragraphs types'
+  - 'administer paragraphs_library_item display'
+  - 'administer paragraphs_library_item form display'
+  - 'administer pathauto'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer responsive images'
+  - 'administer rest resources'
+  - 'administer scheduler'
+  - 'administer search_api'
+  - 'administer search_api_autocomplete'
+  - 'administer seckit'
+  - 'administer site configuration'
+  - 'administer sitemap settings'
+  - 'administer slick'
+  - 'administer statistics'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term display'
+  - 'administer taxonomy_term form display'
+  - 'administer url aliases'
+  - 'administer user display'
+  - 'administer user form display'
+  - 'administer users'
+  - 'administer views'
+  - 'administer webform'
+  - 'administer webform element access'
+  - 'administer webform submission'
+  - 'administer workflows'
+  - 'ban IP addresses'
+  - 'bypass honeypot protection'
+  - 'bypass node access'
+  - 'change own username'
+  - 'clear recommendations feeds'
+  - 'clear report_files feeds'
+  - 'clear reports feeds'
+  - 'create article content'
+  - 'create audio_file media'
+  - 'create career content'
+  - 'create document media'
+  - 'create image media'
+  - 'create media'
+  - 'create page content'
+  - 'create paragraph library item'
+  - 'create person content'
+  - 'create recommendation content'
+  - 'create recommendations feeds'
+  - 'create remote_video media'
+  - 'create report_files feeds'
+  - 'create reports feeds'
+  - 'create terms in article_types'
+  - 'create terms in career_paths'
+  - 'create terms in components'
+  - 'create terms in inspectors_general'
+  - 'create terms in organizations'
+  - 'create terms in people_types'
+  - 'create terms in program_areas'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'create video media'
+  - 'create webform'
+  - 'delete all revisions'
+  - 'delete any article content'
+  - 'delete any audio_file media'
+  - 'delete any career content'
+  - 'delete any document media'
+  - 'delete any image media'
+  - 'delete any media'
+  - 'delete any page content'
+  - 'delete any person content'
+  - 'delete any recommendation content'
+  - 'delete any remote_video media'
+  - 'delete any video media'
+  - 'delete any webform'
+  - 'delete any webform submission'
+  - 'delete article revisions'
+  - 'delete career revisions'
+  - 'delete conditional fields'
+  - 'delete files'
+  - 'delete media'
+  - 'delete orphan revisions'
+  - 'delete own article content'
+  - 'delete own audio_file media'
+  - 'delete own career content'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own page content'
+  - 'delete own person content'
+  - 'delete own recommendation content'
+  - 'delete own remote_video media'
+  - 'delete own video media'
+  - 'delete own webform'
+  - 'delete own webform submission'
+  - 'delete page revisions'
+  - 'delete person revisions'
+  - 'delete recommendation revisions'
+  - 'delete recommendations feeds'
+  - 'delete report_files feeds'
+  - 'delete reports feeds'
+  - 'delete terms in article_types'
+  - 'delete terms in career_paths'
+  - 'delete terms in components'
+  - 'delete terms in inspectors_general'
+  - 'delete terms in organizations'
+  - 'delete terms in people_types'
+  - 'delete terms in program_areas'
+  - 'delete terms in tags'
+  - 'disable own tfa'
+  - 'dropzone upload files'
+  - 'edit any article content'
+  - 'edit any audio_file media'
+  - 'edit any career content'
+  - 'edit any document media'
+  - 'edit any image media'
+  - 'edit any page content'
+  - 'edit any person content'
+  - 'edit any recommendation content'
+  - 'edit any remote_video media'
+  - 'edit any video media'
+  - 'edit any webform'
+  - 'edit behavior plugin settings'
+  - 'edit conditional fields'
+  - 'edit own article content'
+  - 'edit own audio_file media'
+  - 'edit own career content'
+  - 'edit own document media'
+  - 'edit own image media'
+  - 'edit own page content'
+  - 'edit own person content'
+  - 'edit own recommendation content'
+  - 'edit own remote_video media'
+  - 'edit own video media'
+  - 'edit own webform'
+  - 'edit own webform submission'
+  - 'edit paragraph library item'
+  - 'edit terms in article_types'
+  - 'edit terms in career_paths'
+  - 'edit terms in components'
+  - 'edit terms in inspectors_general'
+  - 'edit terms in organizations'
+  - 'edit terms in people_types'
+  - 'edit terms in program_areas'
+  - 'edit terms in tags'
+  - 'edit webform assets'
+  - 'execute entity:publish_action block_content'
+  - 'execute entity:publish_action media'
+  - 'execute entity:publish_action menu_link_content'
+  - 'execute entity:publish_action node'
+  - 'execute entity:publish_action paragraph'
+  - 'execute entity:publish_action paragraphs_library_item'
+  - 'execute entity:publish_action path_alias'
+  - 'execute entity:publish_action taxonomy_term'
+  - 'execute entity:save_action block_content'
+  - 'execute entity:save_action feeds_feed'
+  - 'execute entity:save_action file'
+  - 'execute entity:save_action media'
+  - 'execute entity:save_action menu_link_content'
+  - 'execute entity:save_action node'
+  - 'execute entity:save_action paragraphs_library_item'
+  - 'execute entity:save_action taxonomy_term'
+  - 'execute entity:save_action user'
+  - 'execute entity:unpublish_action block_content'
+  - 'execute entity:unpublish_action media'
+  - 'execute entity:unpublish_action menu_link_content'
+  - 'execute entity:unpublish_action node'
+  - 'execute entity:unpublish_action paragraph'
+  - 'execute entity:unpublish_action paragraphs_library_item'
+  - 'execute entity:unpublish_action path_alias'
+  - 'execute entity:unpublish_action taxonomy_term'
+  - 'execute node_assign_owner_action node'
+  - 'execute node_make_sticky_action node'
+  - 'execute node_make_unsticky_action node'
+  - 'execute node_promote_action node'
+  - 'execute node_unpromote_action node'
+  - 'execute node_unpublish_by_keyword_action node'
+  - 'execute user_add_role_action user'
+  - 'execute user_block_user_action user'
+  - 'execute user_remove_role_action user'
+  - 'execute user_unblock_user_action user'
+  - 'execute vbo_cancel_user_action user'
+  - 'execute vbo_export_generate_csv_action all'
+  - 'execute vbo_export_generate_xlsx_action all'
+  - 'execute views_bulk_edit all'
+  - 'execute views_bulk_operations_delete_entity all'
+  - 'execute webform_submission_make_lock_action webform_submission'
+  - 'execute webform_submission_make_sticky_action webform_submission'
+  - 'execute webform_submission_make_unlock_action webform_submission'
+  - 'execute webform_submission_make_unsticky_action webform_submission'
+  - 'import recommendations feeds'
+  - 'import report_files feeds'
+  - 'import reports feeds'
+  - 'link to any page'
+  - 'manage password reset'
+  - 'notify of path changes'
+  - 'rabbit hole bypass media'
+  - 'rabbit hole bypass node'
+  - 'rabbit hole bypass taxonomy_term'
+  - 'rabbit hole bypass user'
+  - 'replace files'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert career revisions'
+  - 'revert page revisions'
+  - 'revert person revisions'
+  - 'revert recommendation revisions'
+  - 'schedule publishing of nodes'
+  - 'schedule_import recommendations feeds'
+  - 'schedule_import report_files feeds'
+  - 'schedule_import reports feeds'
+  - 'select account cancellation method'
+  - 'tamper recommendations'
+  - 'tamper report_files'
+  - 'tamper reports'
+  - 'unlock recommendations feeds'
+  - 'unlock report_files feeds'
+  - 'unlock reports feeds'
+  - 'update any media'
+  - 'update media'
+  - 'update recommendations feeds'
+  - 'update report_files feeds'
+  - 'update reports feeds'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition publish'
+  - 'use ipe with page manager'
+  - 'use moderation dashboard'
+  - 'use moderation sidebar'
+  - 'use panels caching features'
+  - 'use panels dashboard'
+  - 'use panels locks'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use views bulk edit'
+  - 'use yoast seo'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any moderation dashboard'
+  - 'view any unpublished content'
+  - 'view any webform submission'
+  - 'view article revisions'
+  - 'view career revisions'
+  - 'view conditional fields'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view own webform submission'
+  - 'view page revisions'
+  - 'view pane admin links'
+  - 'view person revisions'
+  - 'view post access counter'
+  - 'view recommendation revisions'
+  - 'view recommendations feeds'
+  - 'view report_files feeds'
+  - 'view reports feeds'
+  - 'view scheduled content'
+  - 'view the administration theme'
+  - 'view unpublished paragraphs'
+  - 'view update notifications'

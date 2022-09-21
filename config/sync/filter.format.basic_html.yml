@@ -1,0 +1,138 @@
+uuid: 7dd430bf-f49c-4662-a446-1848e6ee4144
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.download
+    - core.entity_view_mode.media.embedded
+    - core.entity_view_mode.media.full
+    - core.entity_view_mode.media.inline_image_large
+    - core.entity_view_mode.media.inline_image_medium
+    - core.entity_view_mode.media.inline_image_small
+    - core.entity_view_mode.media.thumbnail
+  module:
+    - blazy
+    - entity_embed
+    - media
+    - slick
+    - token_filter
+name: 'Basic HTML'
+format: basic_html
+weight: -10
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid> <drupal-media data-entity-type data-entity-uuid data-view-mode data-align data-caption alt title> <p class="usa-font-lead text-align-left text-align-center text-align-right text-align-justify"> <hr> <table class="usa-table-borderless usa-table--borderless"> <a href hreflang !href accesskey id rel target title class="usa-button usa-button-gray usa-button-outline usa-button-outline-inverse usa-button-big usa-button-secondary usa-button--gray usa-button--outline usa-button--outline-inverse usa-button--big usa-button--secondary usa-button--accent-cool usa-button--accent-warm usa-button--base"> <ul type class="usa-list"> <ol type start class="usa-list"> <i><h2 class="text-align-left text-align-center text-align-right text-align-justify"> <h3 class="text-align-left text-align-center text-align-right text-align-justify"> <h4 class="text-align-left text-align-center text-align-right text-align-justify"> <h5 class="text-align-left text-align-center text-align-right text-align-justify"> <h6 class="text-align-left text-align-center text-align-right text-align-justify">'
+      filter_html_help: true
+      filter_html_nofollow: true
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html_image_secure:
+    id: filter_html_image_secure
+    provider: filter
+    status: true
+    weight: 9
+    settings: {  }
+  blazy_filter:
+    id: blazy_filter
+    provider: blazy
+    status: false
+    weight: 3
+    settings:
+      media_switch: ''
+      hybrid_style: ''
+      box_style: ''
+      box_caption: ''
+      filter_tags:
+        img: img
+        iframe: iframe
+      use_data_uri: '0'
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 100
+    settings: {  }
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_view_modes:
+        default: default
+        download: download
+        embedded: embedded
+        full: full
+        inline_image_large: inline_image_large
+        inline_image_medium: inline_image_medium
+        inline_image_small: inline_image_small
+        thumbnail: thumbnail
+      allowed_media_types: {  }
+  slick_filter:
+    id: slick_filter
+    provider: slick
+    status: false
+    weight: 4
+    settings:
+      optionset: default
+      layout: ''
+      skin: ''
+      background: false
+      loading: ''
+      preload: false
+      responsive_image_style: ''
+      image_style: ''
+      media_switch: ''
+      ratio: ''
+      thumbnail_style: ''
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      optionset_thumbnail: ''
+      skin_thumbnail: ''
+      thumbnail_caption: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      override: false
+  token_filter:
+    id: token_filter
+    provider: token_filter
+    status: true
+    weight: 0
+    settings:
+      replace_empty: '1'

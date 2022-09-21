@@ -1,0 +1,21 @@
+uuid: 6340b931-4e17-4358-b442-cf00a5b903c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_teaser_content
+    - node.type.page
+  module:
+    - text
+id: node.page.field_teaser_content
+field_name: field_teaser_content
+entity_type: node
+bundle: page
+label: 'Teaser Content'
+description: 'A one to two sentence description of the content. Used as teaser or preview of content only. NOT used as actual article content.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

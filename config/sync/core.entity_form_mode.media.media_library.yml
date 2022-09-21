@@ -1,0 +1,13 @@
+uuid: e7ea51b8-d19a-4209-941a-ddb7ca84adb3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+  enforced:
+    module:
+      - media_library
+id: media.media_library
+label: 'Media library'
+targetEntityType: media
+cache: true

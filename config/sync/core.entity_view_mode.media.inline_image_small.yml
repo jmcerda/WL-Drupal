@@ -1,0 +1,10 @@
+uuid: 62ac79ec-577e-417e-a7ce-6acaf62fa89e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.inline_image_small
+label: 'Inline - Small'
+targetEntityType: media
+cache: true

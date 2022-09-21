@@ -1,0 +1,52 @@
+entity_type_groups:
+  feeds_feed:
+    recommendations:
+      basic: basic
+    reports:
+      basic: basic
+  media:
+    audio_file:
+      basic: basic
+    document:
+      basic: basic
+    image:
+      basic: basic
+    remote_video:
+      basic: basic
+    video:
+      basic: basic
+  paragraphs_library_item:
+    paragraphs_library_item:
+      basic: basic
+  path_alias:
+    path_alias:
+      basic: basic
+  taxonomy_term:
+    article_types:
+      basic: basic
+    career_paths:
+      basic: basic
+    complaint_types:
+      basic: basic
+    components:
+      basic: basic
+    inspectors_general:
+      basic: basic
+    organizations:
+      basic: basic
+    program_areas:
+      basic: basic
+    report_types:
+      basic: basic
+    special_projects:
+      basic: basic
+  user:
+    user:
+      basic: basic
+  webform_submission:
+    contact:
+      basic: basic
+    feedback:
+      basic: basic
+    hotline:
+      basic: basic

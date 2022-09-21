@@ -1,0 +1,35 @@
+uuid: abd208f2-cfb5-47fe-b7e3-68f2b78ec7db
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.content_list.field_column_layout
+    - field.field.paragraph.content_list.field_title
+    - field.field.paragraph.content_list.field_view
+    - paragraphs.paragraphs_type.content_list
+  module:
+    - viewfield
+id: paragraph.content_list.content
+targetEntityType: paragraph
+bundle: content_list
+mode: content
+content:
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_view:
+    type: viewfield_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_column_layout: true
+  status: true

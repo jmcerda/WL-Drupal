@@ -1,0 +1,14 @@
+uuid: 30c2e956-9e69-4b71-91aa-d1b9c80ff9fa
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+id: yes_no
+label: Yes/No
+category: General
+likert: false
+options: |
+  Yes: Yes
+  No: No

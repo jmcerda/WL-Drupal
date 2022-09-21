@@ -1,0 +1,27 @@
+uuid: ed4fc696-5916-434c-af56-bb73d45de84b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.grid_row.field_grid_column
+    - field.field.paragraph.grid_row.field_gutter
+    - paragraphs.paragraphs_type.grid_row
+  module:
+    - entity_reference_revisions
+id: paragraph.grid_row.default
+targetEntityType: paragraph
+bundle: grid_row
+mode: default
+content:
+  field_grid_column:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_gutter: true
+  search_api_excerpt: true

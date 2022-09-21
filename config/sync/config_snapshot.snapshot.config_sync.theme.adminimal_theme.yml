@@ -1,0 +1,232 @@
+uuid: 0add7b06-1d5a-487a-8017-04b32b6e92d8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - adminimal_theme
+id: config_sync.theme.adminimal_theme
+snapshotSet: config_sync
+extensionType: theme
+extensionName: adminimal_theme
+items:
+  -
+    collection: ''
+    name: block.block.adminimal_theme_breadcrumbs
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - system
+        theme:
+          - adminimal_theme
+      id: adminimal_theme_breadcrumbs
+      theme: adminimal_theme
+      region: breadcrumb
+      weight: 0
+      provider: null
+      plugin: system_breadcrumb_block
+      settings:
+        id: system_breadcrumb_block
+        label: Breadcrumbs
+        provider: system
+        label_display: '0'
+      visibility: {  }
+      _core:
+        default_config_hash: 8by5KRsb7ZpmjHj0ms1d7xAG_xH54AWsOX6spDLJ59U
+  -
+    collection: ''
+    name: block.block.adminimal_theme_content
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - system
+        theme:
+          - adminimal_theme
+      id: adminimal_theme_content
+      theme: adminimal_theme
+      region: content
+      weight: 0
+      provider: null
+      plugin: system_main_block
+      settings:
+        id: system_main_block
+        label: 'Main page content'
+        provider: system
+        label_display: '0'
+      visibility: {  }
+      _core:
+        default_config_hash: 80N66GdzEvwqi1m-_GZ-ulkk8AJG9beoXcZ4-pMVKjI
+  -
+    collection: ''
+    name: block.block.adminimal_theme_help
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - help
+        theme:
+          - adminimal_theme
+      id: adminimal_theme_help
+      theme: adminimal_theme
+      region: help
+      weight: 0
+      provider: null
+      plugin: help_block
+      settings:
+        id: help_block
+        label: Help
+        provider: help
+        label_display: '0'
+      visibility: {  }
+      _core:
+        default_config_hash: PfozGAnWQRNy00G6KEnZjIu9b2lGuWg-j-GT_-Ejglc
+  -
+    collection: ''
+    name: block.block.adminimal_theme_local_actions
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        theme:
+          - adminimal_theme
+      id: adminimal_theme_local_actions
+      theme: adminimal_theme
+      region: content
+      weight: -10
+      provider: null
+      plugin: local_actions_block
+      settings:
+        id: local_actions_block
+        label: 'Primary admin actions'
+        provider: core
+        label_display: '0'
+      visibility: {  }
+      _core:
+        default_config_hash: ik4PTMlBD0MWansnSMpSXq5SUlWRJ1IVVt6C7AIbQmc
+  -
+    collection: ''
+    name: block.block.adminimal_theme_login
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - user
+        theme:
+          - adminimal_theme
+      id: adminimal_theme_login
+      theme: adminimal_theme
+      region: content
+      weight: 10
+      provider: null
+      plugin: user_login_block
+      settings:
+        id: user_login_block
+        label: 'User login'
+        provider: user
+        label_display: visible
+      visibility: {  }
+      _core:
+        default_config_hash: 862sIulDdHmF0vBU1s2j2_a_CwkxursrL0pIrMDzzOg
+  -
+    collection: ''
+    name: block.block.adminimal_theme_messages
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        module:
+          - system
+        theme:
+          - adminimal_theme
+      id: adminimal_theme_messages
+      theme: adminimal_theme
+      region: highlighted
+      weight: 0
+      provider: null
+      plugin: system_messages_block
+      settings:
+        id: system_messages_block
+        label: 'Status messages'
+        provider: system
+        label_display: '0'
+      visibility: {  }
+      _core:
+        default_config_hash: YqKTtloWJ8FjLtfVNfrHaK6kVgxT67lC1cJ3j6i6WLo
+  -
+    collection: ''
+    name: block.block.adminimal_theme_page_title
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        theme:
+          - adminimal_theme
+      id: adminimal_theme_page_title
+      theme: adminimal_theme
+      region: header
+      weight: -30
+      provider: null
+      plugin: page_title_block
+      settings:
+        id: page_title_block
+        label: 'Page title'
+        provider: core
+        label_display: '0'
+      visibility: {  }
+      _core:
+        default_config_hash: Z3nlZUh2mSJP3apMrJWt-duS-aLyP79rcfu_0wpPmDs
+  -
+    collection: ''
+    name: block.block.adminimal_theme_primary_local_tasks
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        theme:
+          - adminimal_theme
+      id: adminimal_theme_primary_local_tasks
+      theme: adminimal_theme
+      region: header
+      weight: 0
+      provider: null
+      plugin: local_tasks_block
+      settings:
+        id: local_tasks_block
+        label: 'Primary tabs'
+        provider: core
+        label_display: '0'
+        primary: true
+        secondary: false
+      visibility: {  }
+      _core:
+        default_config_hash: CyX_aDKAka2_eihevNLscCHDYrzDgIqwWzFVEFRKIww
+  -
+    collection: ''
+    name: block.block.adminimal_theme_secondary_local_tasks
+    data:
+      langcode: en
+      status: true
+      dependencies:
+        theme:
+          - adminimal_theme
+      id: adminimal_theme_secondary_local_tasks
+      theme: adminimal_theme
+      region: pre_content
+      weight: 0
+      provider: null
+      plugin: local_tasks_block
+      settings:
+        id: local_tasks_block
+        label: 'Secondary tabs'
+        provider: core
+        label_display: '0'
+        primary: false
+        secondary: true
+      visibility: {  }
+      _core:
+        default_config_hash: DJ7Om1C2xWr2GI8CjZaZtyWpP-0S3hRR3oROZl1oesc

@@ -1,0 +1,30 @@
+uuid: 9c12c653-f315-4182-b086-a484423b0a1d
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_gutter
+field_name: field_gutter
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: grid-gap
+      label: Default
+    -
+      value: grid-gap-sm
+      label: Small
+    -
+      value: grid-gap-lg
+      label: Large
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

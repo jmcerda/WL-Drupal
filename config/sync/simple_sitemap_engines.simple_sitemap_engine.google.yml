@@ -1,0 +1,10 @@
+uuid: 24f25765-0624-421e-98d3-f6092c2beaf2
+langcode: en
+status: true
+dependencies: {  }
+id: google
+label: Google
+url: 'https://www.google.com/ping?sitemap=[sitemap]'
+index_now_url: null
+sitemap_variants:
+  default: default

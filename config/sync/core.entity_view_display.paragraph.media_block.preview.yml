@@ -1,0 +1,55 @@
+uuid: 1291266b-dce1-4d72-92fa-088e8839078e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.media_block.field_body
+    - field.field.paragraph.media_block.field_image
+    - field.field.paragraph.media_block.field_link
+    - field.field.paragraph.media_block.field_title
+    - paragraphs.paragraphs_type.media_block
+  module:
+    - smart_trim
+id: paragraph.media_block.preview
+targetEntityType: paragraph
+bundle: media_block
+mode: preview
+content:
+  field_body:
+    type: smart_trim
+    label: above
+    settings:
+      trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: media_library
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_link: true
+  search_api_excerpt: true

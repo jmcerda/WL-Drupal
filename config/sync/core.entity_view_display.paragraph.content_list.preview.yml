@@ -1,0 +1,35 @@
+uuid: aee2f293-95da-4bb4-8522-b4a6b916584d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.content_list.field_column_layout
+    - field.field.paragraph.content_list.field_title
+    - field.field.paragraph.content_list.field_view
+    - paragraphs.paragraphs_type.content_list
+  module:
+    - viewfield
+id: paragraph.content_list.preview
+targetEntityType: paragraph
+bundle: content_list
+mode: preview
+content:
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_view:
+    type: viewfield_title
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_column_layout: true
+  search_api_excerpt: true

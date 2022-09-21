@@ -1,0 +1,165 @@
+uuid: c337a326-2603-48b8-b33c-cda037b9c16b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_number_of_columns
+field_name: field_number_of_columns
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: grid-col-1
+      label: '1 - All displays'
+    -
+      value: grid-col-2
+      label: '2 - All displays'
+    -
+      value: grid-col-3
+      label: '3 - All displays'
+    -
+      value: grid-col-4
+      label: '4 - All displays'
+    -
+      value: grid-col-5
+      label: '5 - All displays'
+    -
+      value: grid-col-6
+      label: '6 - All displays'
+    -
+      value: grid-col-7
+      label: '7 - All displays'
+    -
+      value: grid-col-8
+      label: '8 - All displays'
+    -
+      value: grid-col-9
+      label: '9 - All displays'
+    -
+      value: grid-col-10
+      label: '10 - All displays'
+    -
+      value: grid-col-11
+      label: '11 - All displays'
+    -
+      value: grid-col-12
+      label: '12 - All displays'
+    -
+      value: 'mobile-lg:grid-col-1'
+      label: '1 - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-2'
+      label: '2 - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-3'
+      label: '3 - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-4'
+      label: '4 - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-5'
+      label: '5 - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-6'
+      label: '6 - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-7'
+      label: '7 - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-8'
+      label: '8 - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-9'
+      label: '9 - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-10'
+      label: '10 - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-11'
+      label: '11 - Large mobile & up'
+    -
+      value: 'mobile-lg:grid-col-12'
+      label: '12 - Large mobile & up'
+    -
+      value: 'tablet:grid-col-1'
+      label: '1 - Tablet & up'
+    -
+      value: 'tablet:grid-col-2'
+      label: '2 - Tablet & up'
+    -
+      value: 'tablet:grid-col-3'
+      label: '3 - Tablet & up'
+    -
+      value: 'tablet:grid-col-4'
+      label: '4 - Tablet & up'
+    -
+      value: 'tablet:grid-col-5'
+      label: '5 - Tablet & up'
+    -
+      value: 'tablet:grid-col-6'
+      label: '6 - Tablet & up'
+    -
+      value: 'tablet:grid-col-7'
+      label: '7 - Tablet & up'
+    -
+      value: 'tablet:grid-col-8'
+      label: '8 - Tablet & up'
+    -
+      value: 'tablet:grid-col-9'
+      label: '9 - Tablet & up'
+    -
+      value: 'tablet:grid-col-10'
+      label: '10 - Tablet & up'
+    -
+      value: 'tablet:grid-col-11'
+      label: '11 - Tablet & up'
+    -
+      value: 'tablet:grid-col-12'
+      label: '12 - Tablet & up'
+    -
+      value: 'desktop:grid-col-1'
+      label: '1 - Desktop & up'
+    -
+      value: 'desktop:grid-col-2'
+      label: '2 - Desktop & up'
+    -
+      value: 'desktop:grid-col-3'
+      label: '3 - Desktop & up'
+    -
+      value: 'desktop:grid-col-4'
+      label: '4 - Desktop & up'
+    -
+      value: 'desktop:grid-col-5'
+      label: '5 - Desktop & up'
+    -
+      value: 'desktop:grid-col-6'
+      label: '6 - Desktop & up'
+    -
+      value: 'desktop:grid-col-7'
+      label: '7 - Desktop & up'
+    -
+      value: 'desktop:grid-col-8'
+      label: '8 - Desktop & up'
+    -
+      value: 'desktop:grid-col-9'
+      label: '9 - Desktop & up'
+    -
+      value: 'desktop:grid-col-10'
+      label: '10 - Desktop & up'
+    -
+      value: 'desktop:grid-col-11'
+      label: '11 - Desktop & up'
+    -
+      value: 'desktop:grid-col-12'
+      label: '12 - Desktop & up'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,46 @@
+uuid: 7793063f-433c-43d9-b771-c581e821818c
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_form_mode.paragraph.content
+    - field.field.paragraph.media_block.field_body
+    - field.field.paragraph.media_block.field_image
+    - field.field.paragraph.media_block.field_link
+    - field.field.paragraph.media_block.field_title
+    - paragraphs.paragraphs_type.media_block
+  module:
+    - media_library
+    - text
+id: paragraph.media_block.content
+targetEntityType: paragraph
+bundle: media_block
+mode: content
+content:
+  field_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 0
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_link: true
+  status: true

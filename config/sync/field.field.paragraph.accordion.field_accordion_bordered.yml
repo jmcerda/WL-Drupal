@@ -1,0 +1,23 @@
+uuid: 0a55c54a-2327-4fa8-a860-d80de2e2154a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion_bordered
+    - paragraphs.paragraphs_type.accordion
+id: paragraph.accordion.field_accordion_bordered
+field_name: field_accordion_bordered
+entity_type: paragraph
+bundle: accordion
+label: 'Add border around items'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,18 @@
+uuid: 7c1fc0a6-7eed-471f-bf2f-a3d9decea3f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_features
+id: config_sync.module.paragraphs_features
+snapshotSet: config_sync
+extensionType: module
+extensionName: paragraphs_features
+items:
+  -
+    collection: ''
+    name: paragraphs_features.settings
+    data:
+      dropdown_to_button: false
+      _core:
+        default_config_hash: lQErqdedK_5v01xVINKpMQnPQNpp4vS6oMsdNYbPfTI

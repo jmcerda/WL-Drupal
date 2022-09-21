@@ -1,0 +1,19 @@
+uuid: 17cf11c3-cdd4-468e-94cc-7ef239fa93cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_defaults
+id: config_sync.module.field_defaults
+snapshotSet: config_sync
+extensionType: module
+extensionName: field_defaults
+items:
+  -
+    collection: ''
+    name: field_defaults.settings
+    data:
+      field_defaults:
+        update_date: 0
+      _core:
+        default_config_hash: AeSkXShWM1n-g_KNsUI6Hv0VSs_KyaeZt3OaYIPF0eQ

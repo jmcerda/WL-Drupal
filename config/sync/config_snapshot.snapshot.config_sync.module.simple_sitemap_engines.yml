@@ -1,0 +1,39 @@
+uuid: 62831c75-3149-45ac-8b95-dd6e2344f421
+langcode: en
+status: true
+dependencies:
+  module:
+    - simple_sitemap_engines
+id: config_sync.module.simple_sitemap_engines
+snapshotSet: config_sync
+extensionType: module
+extensionName: simple_sitemap_engines
+items:
+  -
+    collection: ''
+    name: simple_sitemap_engines.settings
+    data:
+      enabled: true
+      submission_interval: 86400
+      _core:
+        default_config_hash: ohAe8voyBTv2oFxGWeZ16kj5QsTnPYFrXwMOVMTKQb4
+  -
+    collection: ''
+    name: simple_sitemap_engines.simple_sitemap_engine.bing
+    data:
+      id: bing
+      label: Bing
+      url: 'https://www.bing.com/ping?sitemap=[sitemap]'
+      sitemap_variants: {  }
+      _core:
+        default_config_hash: pu2tnTIZRlkkRZxbhVQU0L3FYniVvYFXIe6iCH9kXHo
+  -
+    collection: ''
+    name: simple_sitemap_engines.simple_sitemap_engine.google
+    data:
+      id: google
+      label: Google
+      url: 'https://www.google.com/ping?sitemap=[sitemap]'
+      sitemap_variants: {  }
+      _core:
+        default_config_hash: PS-z03VbhvMPW8pe7N_Pya5JDfVm1mL_F07cJ_srmYE

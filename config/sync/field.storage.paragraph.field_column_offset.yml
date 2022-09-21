@@ -1,0 +1,54 @@
+uuid: d0d372e9-ad74-4ef5-b309-fe1c9fa55e4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_column_offset
+field_name: field_column_offset
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: grid-offset-1
+      label: '1'
+    -
+      value: grid-offset-2
+      label: '2'
+    -
+      value: grid-offset-3
+      label: '3'
+    -
+      value: grid-offset-4
+      label: '4'
+    -
+      value: grid-offset-5
+      label: '5'
+    -
+      value: grid-offset-6
+      label: '6'
+    -
+      value: grid-offset-7
+      label: '7'
+    -
+      value: grid-offset-8
+      label: '8'
+    -
+      value: grid-offset-9
+      label: '9'
+    -
+      value: grid-offset-10
+      label: '10'
+    -
+      value: grid-offset-11
+      label: '11'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

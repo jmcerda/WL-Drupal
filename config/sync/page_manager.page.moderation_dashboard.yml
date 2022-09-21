@@ -1,0 +1,33 @@
+uuid: e2491a42-cbef-4b9d-8e35-eaf625c548d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - moderation_dashboard
+  enforced:
+    module:
+      - moderation_dashboard
+id: moderation_dashboard
+label: 'Moderation Dashboard'
+description: ''
+use_admin_theme: false
+path: '/user/{user}/moderation/dashboard'
+access_logic: and
+access_conditions:
+  -
+    id: has_moderated_content_type
+    negate: false
+    context_mapping: {  }
+    enable: false
+  -
+    id: moderation_dashboard_access
+    negate: false
+    context_mapping:
+      dashboard_user: user
+      current_user: current_user
+    enable: false
+parameters:
+  user:
+    machine_name: user
+    label: User
+    type: 'entity:user'

@@ -1,0 +1,24 @@
+uuid: c286b94c-da66-4360-ae61-752fa73a9939
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.slider.field_slide
+    - paragraphs.paragraphs_type.slider
+  module:
+    - paragraphs
+id: paragraph.slider.preview
+targetEntityType: paragraph
+bundle: slider
+mode: preview
+content:
+  field_slide:
+    type: paragraph_summary
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

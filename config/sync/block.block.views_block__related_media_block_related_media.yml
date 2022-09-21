@@ -1,0 +1,48 @@
+uuid: 3cc81fba-5b0d-4822-90e0-ca26ea96cde2
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.related_media
+  module:
+    - block_class
+    - node
+    - system
+    - views
+  theme:
+    - adminimal_theme
+third_party_settings:
+  block_class:
+    classes: margin-top-4
+id: views_block__related_media_block_related_media
+theme: adminimal_theme
+region: header
+weight: -6
+provider: null
+plugin: 'views_block:related_media-block_related_media'
+settings:
+  id: 'views_block:related_media-block_related_media'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping:
+    nid: '@node.node_route_context:node'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: ''
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article
+      career: career
+      person: person
+      recommendation: recommendation
+      report: report

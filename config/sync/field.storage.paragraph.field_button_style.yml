@@ -1,0 +1,51 @@
+uuid: 530104c2-44da-4b27-ba15-44df23f6a0b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_button_style
+field_name: field_button_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: default
+      label: 'Default color'
+    -
+      value: usa-button--secondary
+      label: 'Secondary color'
+    -
+      value: usa-button--accent-cool
+      label: 'Accent cool color'
+    -
+      value: usa-button--accent-warm
+      label: 'Accent warm color'
+    -
+      value: usa-button--base
+      label: 'Base color'
+    -
+      value: usa-button--outline
+      label: Outline
+    -
+      value: 'usa-button--outline usa-button--inverse'
+      label: 'Outline inverse'
+    -
+      value: usa-button--unstyled
+      label: Unstyled
+    -
+      value: usa-button--big
+      label: Big
+    -
+      value: 'usa-button--big usa-button--unstyled'
+      label: 'Big unstyled'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

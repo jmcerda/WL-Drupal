@@ -1,0 +1,27 @@
+uuid: bace38b2-ad48-4d75-838b-6b1691a6bf1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card_group.field_cards
+    - field.field.paragraph.card_group.field_column_layout
+    - paragraphs.paragraphs_type.card_group
+  module:
+    - entity_reference_revisions
+id: paragraph.card_group.default
+targetEntityType: paragraph
+bundle: card_group
+mode: default
+content:
+  field_cards:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_column_layout: true
+  search_api_excerpt: true

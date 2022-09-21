@@ -1,0 +1,10 @@
+uuid: b2cf843c-1c1a-4ffe-a05b-2febd60869ac
+langcode: en
+status: true
+dependencies: {  }
+id: bing
+label: Bing
+url: 'https://www.bing.com/ping?sitemap=[sitemap]'
+index_now_url: null
+sitemap_variants:
+  default: default

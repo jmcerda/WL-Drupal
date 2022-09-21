@@ -1,0 +1,16 @@
+uuid: 6f859ba4-cb34-44fa-843e-dae1226a0ca3
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.thumbnail
+id: thumbnail
+label: Thumbnail
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: thumbnail

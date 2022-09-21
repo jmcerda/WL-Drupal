@@ -1,0 +1,20 @@
+uuid: 0d33c1c2-12fe-4359-a8a0-ce771dd90736
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_usage
+id: config_sync.module.entity_usage
+snapshotSet: config_sync
+extensionType: module
+extensionName: entity_usage
+items:
+  -
+    collection: ''
+    name: entity_usage.settings
+    data:
+      track_enabled_base_fields: false
+      local_task_enabled_entity_types: {  }
+      usage_controller_items_per_page: 25
+      _core:
+        default_config_hash: AXUBMTvVtpcNp0jKjDaWjSHqMy6HjuUf7j4yVbXgazI

@@ -1,0 +1,39 @@
+uuid: a5524d37-98e1-424a-b9a0-43a14b788006
+langcode: en
+status: true
+dependencies:
+  module:
+    - rabbit_hole
+id: config_sync.module.rabbit_hole
+snapshotSet: config_sync
+extensionType: module
+extensionName: rabbit_hole
+items:
+  -
+    collection: ''
+    name: rabbit_hole.behavior_settings.default
+    data:
+      id: default
+      entity_type_id: null
+      entity_id: null
+      action: display_page
+      allow_override: 1
+      redirect_code: 0
+      redirect: ''
+      redirect_fallback_action: access_denied
+      _core:
+        default_config_hash: hzh9CgsYCGxPEcbR3ieT1la6e43lMv-ivoN7oZJKkQQ
+  -
+    collection: ''
+    name: rabbit_hole.behavior_settings.default_bundle
+    data:
+      id: default_bundle
+      entity_type_id: null
+      entity_id: null
+      action: display_page
+      allow_override: 1
+      redirect_code: 0
+      redirect: ''
+      redirect_fallback_action: access_denied
+      _core:
+        default_config_hash: qUkgsWZRCa_sLIn5JsMzB3xnx5ekIsVeGGZr7T0s9MY

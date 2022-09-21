@@ -1,0 +1,12 @@
+uuid: c41ee701-8727-4f49-8054-8b498960ff09
+langcode: en
+status: true
+dependencies: {  }
+id: default_bundle
+entity_type_id: null
+entity_id: null
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 0
+redirect_fallback_action: access_denied

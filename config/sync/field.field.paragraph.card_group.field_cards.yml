@@ -1,0 +1,76 @@
+uuid: a8efed46-840e-485e-aaac-29a3e76677a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cards
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.card_group
+  module:
+    - entity_reference_revisions
+id: paragraph.card_group.field_cards
+field_name: field_cards
+entity_type: paragraph
+bundle: card_group
+label: Cards
+description: 'Create cards to include in your collection. <em>See https://designsystem.digital.gov/components/card/ for more information</em>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      card: card
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 17
+        enabled: false
+      accordion_item:
+        weight: 18
+        enabled: false
+      call_to_action:
+        weight: 19
+        enabled: false
+      card:
+        weight: 20
+        enabled: true
+      card_group:
+        weight: 21
+        enabled: false
+      content_list:
+        weight: 22
+        enabled: false
+      form:
+        weight: 23
+        enabled: false
+      from_library:
+        weight: 24
+        enabled: false
+      graphic_list:
+        weight: 25
+        enabled: false
+      grid_column:
+        weight: 26
+        enabled: false
+      grid_row:
+        weight: 27
+        enabled: false
+      hero:
+        weight: 31
+        enabled: false
+      media:
+        weight: 29
+        enabled: false
+      media_block:
+        weight: 30
+        enabled: false
+      slider:
+        weight: 28
+        enabled: false
+      text:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

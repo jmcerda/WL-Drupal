@@ -1,0 +1,26 @@
+uuid: b259ad60-7158-423a-a2e1-c63d2a206f46
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seo
+    - node.type.article
+  module:
+    - yoast_seo
+id: node.article.field_seo
+field_name: field_seo
+entity_type: node
+bundle: article
+label: SEO
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    status: '0'
+    focus_keyword: ''
+    title: null
+    description: null
+default_value_callback: ''
+settings: {  }
+field_type: yoast_seo

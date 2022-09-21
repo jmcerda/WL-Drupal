@@ -1,0 +1,10 @@
+uuid: d33f4e24-0761-4c20-b083-5a16dec69d8e
+langcode: en
+status: true
+dependencies: {  }
+id: media
+label: Media
+icon_uuid: null
+icon_default: null
+description: 'Full width image or video thumbnail with optional caption.'
+behavior_plugins: {  }

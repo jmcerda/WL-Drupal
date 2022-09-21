@@ -1,0 +1,20 @@
+uuid: 19a830c5-5b23-4e60-a672-905cf598516f
+langcode: en
+status: false
+dependencies:
+  theme:
+    - adminimal_theme
+id: adminimal_theme_local_tasks
+theme: adminimal_theme
+region: highlighted
+weight: -12
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

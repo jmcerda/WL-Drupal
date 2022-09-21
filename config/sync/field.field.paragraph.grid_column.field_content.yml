@@ -1,0 +1,88 @@
+uuid: 9096af15-a0c9-4bc7-b0db-f4bc9c1f8e26
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.content_list
+    - paragraphs.paragraphs_type.form
+    - paragraphs.paragraphs_type.grid_column
+    - paragraphs.paragraphs_type.media
+    - paragraphs.paragraphs_type.media_block
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: paragraph.grid_column.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: grid_column
+label: 'Column content'
+description: 'Select or create content to display in this column.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion: accordion
+      card: card
+      content_list: content_list
+      form: form
+      media: media
+      media_block: media_block
+      text: text
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: -33
+        enabled: true
+      accordion_item:
+        weight: -32
+        enabled: false
+      call_to_action:
+        weight: -30
+        enabled: false
+      card:
+        weight: -29
+        enabled: true
+      card_group:
+        weight: -31
+        enabled: false
+      content_list:
+        weight: -28
+        enabled: true
+      form:
+        weight: -27
+        enabled: true
+      from_library:
+        weight: -26
+        enabled: false
+      graphic_list:
+        weight: -25
+        enabled: false
+      grid_column:
+        weight: -24
+        enabled: false
+      grid_row:
+        weight: -23
+        enabled: false
+      hero:
+        weight: 28
+        enabled: false
+      media:
+        weight: -21
+        enabled: true
+      media_block:
+        weight: -20
+        enabled: true
+      slider:
+        weight: 31
+        enabled: false
+      text:
+        weight: 32
+        enabled: true
+field_type: entity_reference_revisions

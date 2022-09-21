@@ -1,0 +1,12 @@
+uuid: bd81f031-86f3-4dfc-ba45-ed9bd029bf8e
+langcode: en
+status: true
+dependencies:
+  module:
+    - views_bulk_edit
+    - node
+id: node_edit_action
+label: 'Edit content'
+type: node
+plugin: 'entity:edit_action:node'
+configuration: {  }

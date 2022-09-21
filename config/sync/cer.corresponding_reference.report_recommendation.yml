@@ -1,0 +1,13 @@
+uuid: 843a8e50-6a1f-4167-8ed8-1828317e28ea
+langcode: en
+status: true
+dependencies: {  }
+id: report_recommendation
+label: Report/Recommendation
+enabled: true
+first_field: field_report
+second_field: field_recommendations
+bundles:
+  node:
+    - recommendation
+    - report

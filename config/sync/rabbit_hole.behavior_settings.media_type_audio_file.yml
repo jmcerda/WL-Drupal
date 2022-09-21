@@ -1,0 +1,14 @@
+uuid: 5a6f5f29-adb5-4a93-8984-449530c952d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.audio_file
+id: media_type_audio_file
+entity_type_id: media_type
+entity_id: audio_file
+action: access_denied
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

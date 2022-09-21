@@ -1,0 +1,19 @@
+uuid: b6e3a822-b496-4bc0-9aff-f4ad7a655991
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+    - paragraphs_library
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      uswds: uswds
+  paragraphs_library:
+    allow_library_conversion: true
+id: card_group
+label: 'Card Group'
+icon_uuid: null
+icon_default: null
+description: 'A paragraph type to create and display a collection of cards. <em>See <a href="https://designsystem.digital.gov/components/card/">U.S. Web Design System (USWDS)</a> for more information.</em>'
+behavior_plugins: {  }

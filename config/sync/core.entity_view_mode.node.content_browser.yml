@@ -1,0 +1,10 @@
+uuid: c8834da9-1e0a-4c11-82f0-a99cddedc856
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.content_browser
+label: 'Content Browser'
+targetEntityType: node
+cache: true

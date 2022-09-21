@@ -1,0 +1,18 @@
+uuid: a05bd7f1-945b-435b-80ef-6bf6e5abb79d
+langcode: en
+status: true
+dependencies:
+  module:
+    - filefield_paths
+id: config_sync.module.filefield_paths
+snapshotSet: config_sync
+extensionType: module
+extensionName: filefield_paths
+items:
+  -
+    collection: ''
+    name: filefield_paths.settings
+    data:
+      temp_location: 'public://filefield_paths'
+      _core:
+        default_config_hash: Kt7Ug8VUG1kQuaf77ad_5XIKSr-66nzuWUTIEVmhKl8

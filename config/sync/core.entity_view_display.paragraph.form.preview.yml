@@ -1,0 +1,27 @@
+uuid: 94f7dff8-9905-4086-897b-b51e4136f0b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.form.field_webform
+    - paragraphs.paragraphs_type.form
+  module:
+    - webform
+id: paragraph.form.preview
+targetEntityType: paragraph
+bundle: form
+mode: preview
+content:
+  field_webform:
+    type: webform_entity_reference_link
+    label: above
+    settings:
+      label: '[webform:title]'
+      dialog: ''
+      attributes: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

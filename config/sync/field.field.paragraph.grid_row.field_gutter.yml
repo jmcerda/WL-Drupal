@@ -1,0 +1,21 @@
+uuid: 20f3a728-5693-4171-b433-4cf38dd7a862
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gutter
+    - paragraphs.paragraphs_type.grid_row
+  module:
+    - options
+id: paragraph.grid_row.field_gutter
+field_name: field_gutter
+entity_type: paragraph
+bundle: grid_row
+label: Gutter
+description: 'Add a gap (or gutter) between each column in the row. The default gap width is 2 units and 4 units at desktop and higher. The large gap width is 32px (4 spacing units). The small gap width is 2px.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

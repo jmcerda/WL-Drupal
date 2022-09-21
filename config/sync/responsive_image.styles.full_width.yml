@@ -1,0 +1,16 @@
+uuid: fb47c974-b9bf-44bb-8400-dc5ff6f8f49f
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.embedded_full_width
+id: full_width
+label: 'Full width'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: embedded_full_width
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: embedded_full_width

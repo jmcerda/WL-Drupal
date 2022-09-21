@@ -1,0 +1,17 @@
+uuid: bad4753d-ebee-4737-a2ec-81143cfd44a0
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+id: likert_would_you
+label: 'Likert: Would You'
+category: Likert
+likert: true
+options: |
+  1: Definitely Not
+  2: Probably Not
+  3: Not Sure
+  4: Probably
+  5: Definitely

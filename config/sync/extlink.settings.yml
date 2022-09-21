@@ -1,0 +1,27 @@
+extlink_use_external_js_file: true
+extlink_exclude_admin_routes: false
+extlink_target: true
+extlink_target_no_override: true
+extlink_nofollow: true
+extlink_noreferrer: true
+extlink_follow_no_override: true
+extlink_subdomains: true
+extlink_alert: false
+extlink_alert_text:
+  value: "<h4>You are leaving the [site:name] website and are about to proceed to a Non-Government Site.</h4>\r\n\r\n<p><strong>[extlink:external-url]</strong></p>\r\n\r\n<p>We do not endorse the organization or views represented by this site and take no responsibility for, and exercise no control over, the accuracy, accessibility, copyright or trademark compliance or legality of the material contained on this site.</p>\r\n\r\n<p>Click OK to proceed or cancel to stay on this page.</p>\r\n\r\n<p><a class=\"usa-button usa-button-big\" href=\"[extlink:back-url]\" title=\"Stay on page\">Stay on page</a> <a class=\"usa-button usa-button-big\" href=\"[extlink:external-url]\" title=\"Go to link\">Proceed</a></p>\r\n\r\n<p>[extlink:timer]</p>\r\n"
+  format: raw_html
+extlink_exclude: .(\.gov|\.mil|\.edu|\.GOV|\.MIL|\.EDU|twitter\.com)
+extlink_include: ''
+extlink_class: '0'
+extlink_label: '(link is external)'
+extlink_img_class: false
+extlink_css_exclude: ''
+extlink_css_explicit: ''
+extlink_mailto_class: '0'
+extlink_mailto_label: '(link sends email)'
+extlink_use_font_awesome: false
+extlink_font_awesome_classes:
+  links: 'fa fa-external-link'
+  mailto: 'fa fa-envelope-o'
+extlink_icon_placement: '0'
+whitelisted_domains: {  }

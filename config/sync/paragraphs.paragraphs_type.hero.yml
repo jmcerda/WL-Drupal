@@ -1,0 +1,19 @@
+uuid: 7ff04e54-0867-45c5-b346-f0e0532bdefc
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+  paragraphs_ee:
+    paragraphs_categories:
+      uswds: uswds
+id: hero
+label: Hero
+icon_uuid: null
+icon_default: null
+description: 'Hero paragraphs are used at the top of a landing page to help set the tone for the content of your site and to help users understand what your brand is all about. The Hero paragraph offers a callout which provides a high-level overview of the content on the site and will often reference the Hero image that sits behind it. <em>See <a href="https://designsystem.digital.gov/templates/landing-page/">U.S. Web Design System (USWDS)</a> for more information.</em>'
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: 28e48ae3-9bcc-40aa-b11f-a73a17a190fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_layout
+    - paragraphs.paragraphs_type.card
+  module:
+    - options
+id: paragraph.card.field_card_layout
+field_name: field_card_layout
+entity_type: paragraph
+bundle: card
+label: Layout
+description: 'Select card layout type. <em>See: https://designsystem.digital.gov/components/card/</em> for more information.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

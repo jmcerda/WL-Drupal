@@ -1,0 +1,21 @@
+uuid: 47798c2f-75cf-4d9c-8b85-254a1430afd4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_thumb
+    - paragraphs.paragraphs_type.card
+  module:
+    - options
+id: paragraph.card.field_media_thumb
+field_name: field_media_thumb
+entity_type: paragraph
+bundle: card
+label: Type
+description: '<em>See https://designsystem.digital.gov/components/card/ for more information.</em>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

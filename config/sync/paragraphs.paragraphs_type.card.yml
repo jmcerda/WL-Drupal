@@ -1,0 +1,16 @@
+uuid: 21f1dab2-92fe-40c5-9c64-49639c126f93
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+third_party_settings:
+  paragraphs_ee:
+    paragraphs_categories:
+      uswds: uswds
+id: card
+label: Card
+icon_uuid: null
+icon_default: null
+description: "Cards contain content and actions about a single subject.<br>\r\nA card is often a subset or summary of a larger idea. It acts as an entry point to more detailed information.<br>\r\nThis \"summary\" can contain a variety of entity types, such as text, images and multimedia, or buttons and links.<br>\r\n<em>See <a href=\"https://designsystem.digital.gov/components/card/\">U.S. Web Design System (USWDS)</a> for more information.</em>\r\n"
+behavior_plugins: {  }

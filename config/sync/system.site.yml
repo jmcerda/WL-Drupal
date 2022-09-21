@@ -1,0 +1,13 @@
+langcode: en
+uuid: 77339f33-7cb4-4265-a280-508b87721b02
+name: 'Wilkes & Liberty'
+mail: 45@wilkesliberty.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: ''

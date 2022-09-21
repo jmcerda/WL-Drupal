@@ -1,0 +1,19 @@
+uuid: d38a6535-8d30-415b-8fe2-410d9a228f1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - telephone_validation
+id: config_sync.module.telephone_validation
+snapshotSet: config_sync
+extensionType: module
+extensionName: telephone_validation
+items:
+  -
+    collection: ''
+    name: telephone_validation.settings
+    data:
+      format: 0
+      country: {  }
+      _core:
+        default_config_hash: 57bnEq4bIREchyOnZEiqWfBMqAdQnCgSYUe7xcT_5E4

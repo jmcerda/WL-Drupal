@@ -1,0 +1,16 @@
+uuid: 55251815-388e-44fc-bcbc-ea26d6244a47
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.embedded_medium
+id: inline_media_image_medium
+label: 'Inline - Medium'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: embedded_medium
+    breakpoint_id: responsive_image.viewport_sizing
+    multiplier: 1x
+breakpoint_group: responsive_image
+fallback_image_style: embedded_medium

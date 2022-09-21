@@ -1,0 +1,16 @@
+uuid: 170f9e02-12df-4f48-801c-38a884da8472
+langcode: en
+status: true
+dependencies: {  }
+id: reports_pager
+label: 'Reports Pager'
+panes:
+  left:
+    style: none
+    config: {  }
+  center:
+    style: mini
+    config: {  }
+  right:
+    style: none
+    config: {  }

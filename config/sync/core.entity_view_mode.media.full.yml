@@ -1,0 +1,10 @@
+uuid: d40f16fe-038b-459b-8935-3390ae88a279
+langcode: en
+status: false
+dependencies:
+  module:
+    - media
+id: media.full
+label: 'Full content'
+targetEntityType: media
+cache: true

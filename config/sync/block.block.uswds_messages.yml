@@ -1,0 +1,20 @@
+uuid: 3419b72b-9be2-4c57-9a48-ce1394dc9df2
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - uswds
+id: uswds_messages
+theme: uswds
+region: ''
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

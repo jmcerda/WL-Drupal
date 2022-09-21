@@ -1,0 +1,19 @@
+uuid: 57dbe1cc-8814-4d13-87ef-66186a0cbe7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - embed
+id: config_sync.module.embed
+snapshotSet: config_sync
+extensionType: module
+extensionName: embed
+items:
+  -
+    collection: ''
+    name: embed.settings
+    data:
+      file_scheme: public
+      upload_directory: embed_buttons
+      _core:
+        default_config_hash: Ed6LXVlKotwVS4tx7_rnsL-6NlBoD-PLu3KFPAvpNMc

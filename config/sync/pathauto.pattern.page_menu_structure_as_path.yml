@@ -1,0 +1,14 @@
+uuid: 3bcbf519-2a05-4f72-afff-3e588e673348
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: page_menu_structure_as_path
+label: 'Page - Menu structure as path'
+type: 'canonical_entities:node'
+pattern: '/[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria: {  }
+selection_logic: and
+weight: -4
+relationships: {  }

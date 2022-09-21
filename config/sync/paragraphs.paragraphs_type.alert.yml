@@ -1,0 +1,19 @@
+uuid: ae110dea-0518-4dd9-a63b-b3f55ef8fb6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_ee
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+  paragraphs_ee:
+    paragraphs_categories:
+      uswds: uswds
+id: alert
+label: Alert
+icon_uuid: null
+icon_default: null
+description: 'An alert keeps users informed of important and sometimes time-sensitive changes. <em>See: <a href="https://designsystem.digital.gov/components/alert/">https://designsystem.digital.gov/components/alert/</a> for more information.</em>'
+behavior_plugins: {  }

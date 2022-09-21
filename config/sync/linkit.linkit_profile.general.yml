@@ -1,0 +1,33 @@
+uuid: 81daea7c-f90b-43e8-a916-050e51fbac2f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+label: General
+id: general
+description: 'Profile for linking to content on the site.'
+matchers:
+  cf375e69-fbb3-49f1-819d-8352a73e3f0f:
+    id: 'entity:node'
+    uuid: cf375e69-fbb3-49f1-819d-8352a73e3f0f
+    settings:
+      metadata: ''
+      bundles: {  }
+      group_by_bundle: true
+      substitution_type: canonical
+      limit: 100
+      include_unpublished: false
+      result_description: Content
+    weight: 0
+  ee486b8c-fdd8-4077-a639-8139b57230e1:
+    id: 'entity:media'
+    uuid: ee486b8c-fdd8-4077-a639-8139b57230e1
+    settings:
+      metadata: ''
+      bundles: {  }
+      group_by_bundle: true
+      substitution_type: media
+      limit: 100
+      result_description: Media
+    weight: 0

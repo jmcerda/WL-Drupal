@@ -1,0 +1,10 @@
+uuid: 12028060-5291-4390-bd3c-d31144868d9f
+langcode: en
+status: true
+dependencies: {  }
+id: from_library
+label: 'From library'
+icon_uuid: null
+icon_default: null
+description: 'Select an existing reusable paragraph for the library.'
+behavior_plugins: {  }

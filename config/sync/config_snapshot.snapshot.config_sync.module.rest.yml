@@ -1,0 +1,18 @@
+uuid: 2e73fff8-e733-4893-bb54-118ee2e5714a
+langcode: en
+status: true
+dependencies:
+  module:
+    - rest
+id: config_sync.module.rest
+snapshotSet: config_sync
+extensionType: module
+extensionName: rest
+items:
+  -
+    collection: ''
+    name: rest.settings
+    data:
+      bc_entity_resource_permissions: false
+      _core:
+        default_config_hash: Jg3_yqsTIZ51KOKp3OV2KDVVrlx3N3OCEfniEse09KE

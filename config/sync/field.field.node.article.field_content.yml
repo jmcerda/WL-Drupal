@@ -1,0 +1,93 @@
+uuid: f6116ea4-55f4-4fa9-9c7c-cdcc49377b30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.article
+    - paragraphs.paragraphs_type.accordion_item
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.grid_column
+    - paragraphs.paragraphs_type.slider
+    - paragraphs.paragraphs_type.hero
+  module:
+    - entity_reference_revisions
+id: node.article.field_content
+field_name: field_content
+entity_type: node
+bundle: article
+label: Content
+description: 'Add any ''Paragraph'' content such as audio, video, lists, columns, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion_item: accordion_item
+      card: card
+      hero: hero
+      slider: slider
+      grid_column: grid_column
+    negate: 1
+    target_bundles_drag_drop:
+      accordion:
+        weight: -33
+        enabled: false
+      accordion_item:
+        weight: -32
+        enabled: true
+      call_to_action:
+        weight: -31
+        enabled: false
+      card:
+        weight: -30
+        enabled: true
+      card_layout:
+        weight: -29
+        enabled: true
+      column:
+        weight: -27
+        enabled: true
+      content_list:
+        weight: -28
+        enabled: false
+      form:
+        weight: -26
+        enabled: false
+      from_library:
+        weight: -25
+        enabled: false
+      graphic_list:
+        weight: 28
+        enabled: false
+      grid:
+        weight: -20
+        enabled: false
+      grid_column:
+        weight: 29
+        enabled: true
+      grid_row:
+        weight: 30
+        enabled: false
+      hero:
+        weight: -23
+        enabled: true
+      media:
+        weight: 32
+        enabled: false
+      media_block:
+        weight: 33
+        enabled: false
+      slider:
+        weight: -22
+        enabled: true
+      text:
+        weight: -19
+        enabled: false
+      video:
+        weight: -18
+        enabled: false
+field_type: entity_reference_revisions

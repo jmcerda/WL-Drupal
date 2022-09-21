@@ -1,0 +1,23 @@
+uuid: 504465ab-aad3-43e8-a861-ddde2fb96705
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_standard_layout_options
+    - paragraphs.paragraphs_type.card
+  module:
+    - options
+id: paragraph.card.field_standard_layout_options
+field_name: field_standard_layout_options
+entity_type: paragraph
+bundle: card
+label: Options
+description: 'See <em>https://designsystem.digital.gov/components/card</em> for more information.'
+required: true
+translatable: false
+default_value:
+  -
+    value: standard_layout
+default_value_callback: ''
+settings: {  }
+field_type: list_string

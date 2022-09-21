@@ -1,0 +1,21 @@
+uuid: b97e1091-0033-440b-a27a-1483aa551468
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_style
+    - paragraphs.paragraphs_type.call_to_action
+  module:
+    - options
+id: paragraph.call_to_action.field_button_style
+field_name: field_button_style
+entity_type: paragraph
+bundle: call_to_action
+label: 'Link/button style'
+description: "Select the button style of your URL.\r\n<em>See https://designsystem.digital.gov/components/button/ for details.</em>"
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

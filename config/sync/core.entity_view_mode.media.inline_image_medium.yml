@@ -1,0 +1,10 @@
+uuid: b3ddb158-5c7f-401b-93e7-97574dba9921
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.inline_image_medium
+label: 'Inline - Medium'
+targetEntityType: media
+cache: true

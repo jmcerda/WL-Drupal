@@ -1,0 +1,12 @@
+uuid: 2a58a099-9b62-465c-98dd-d1f0cb79bd13
+langcode: en
+status: true
+dependencies:
+  module:
+    - views_bulk_edit
+    - taxonomy
+id: taxonomy_term_edit_action
+label: 'Edit taxonomy terms'
+type: taxonomy_term
+plugin: 'entity:edit_action:taxonomy_term'
+configuration: {  }
