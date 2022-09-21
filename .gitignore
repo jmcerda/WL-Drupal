@@ -111,12 +111,13 @@ salt.txt
 
 # Ignore custom local dev config files
 .lando.yml
-.ddev
 
 # Build artifacts
 node_modules
 
 .htpasswd
+
+# JSON auth
 auth.json
 
 # Ignore databases.
@@ -124,6 +125,7 @@ auth.json
 
 # Temporary ignore default directory until discussed.
 /web/sites/default/default.settings.php
+/config/sync
 
 # Ignore paths that may contain temporary files
 /web/sites/*/translations
